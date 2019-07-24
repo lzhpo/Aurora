@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bf1808c-7665-48e5-82ac-ceffe536cc3a" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_rabbitmq_amqp_client_5_4_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_amqp_2_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_rabbit_2_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_amqp_2_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_1_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_5_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ELK+MQ收集日志.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Aurora.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Aurora.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,7 +53,7 @@
     <favorites_list name="Aurora" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -119,13 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/MyFileMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/MyFileMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/MyFileService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/MyFileController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/EmailMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/EmailMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/EmailService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/EmailController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/LogMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/LogMapper.xml" />
@@ -168,8 +172,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/aspect/LogAspect.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/blog/blogArticle.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/BlogArticleController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mq/producer/Test1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mq/producer/testSendMail.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mq/producer/TestSendMail.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-rabbitmq.yml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/resources/logback-spring.xml" />
+        <option value="$PROJECT_DIR$/ELK+MQ收集日志.md" />
       </list>
     </option>
   </component>
@@ -207,9 +218,9 @@
     <option name="jreName" value="#JAVA_HOME" />
     <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="770" />
-    <option name="y" value="22" />
+    <option name="y" value="20" />
     <option name="width" value="1040" />
     <option name="height" value="1005" />
   </component>
@@ -221,7 +232,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -234,6 +244,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -252,7 +263,7 @@
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -261,15 +272,15 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.lzhpo.aurora.admin.entity" />
-      <recent name="com.lzhpo.aurora.admin.shiro" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\MyProject\Aurora\src\main\resources\static\lib\onlineUser" />
+      <recent name="E:\MyProject\Aurora\src\main\resources\static\lib" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\MyProject\Aurora\src\main\resources" />
       <recent name="E:\MyProject\Aurora" />
       <recent name="E:\MyProject\Aurora\src\main\resources\static\design" />
       <recent name="E:\MyProject\Aurora\src\main\resources\static\lib\layui-from-selects" />
-      <recent name="E:\MyProject\Aurora\src\main\resources" />
       <recent name="E:\MyProject\Aurora\src\main\resources\static\images" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -278,9 +289,9 @@
       <recent name="com.lzhpo.aurora.admin.aspect" />
       <recent name="com.lzhpo.aurora.admin.annotation" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\MyProject\Aurora\src\main\resources\static\lib\onlineUser" />
-      <recent name="E:\MyProject\Aurora\src\main\resources\static\lib" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.lzhpo.aurora.admin.entity" />
+      <recent name="com.lzhpo.aurora.admin.shiro" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -604,6 +615,9 @@
       <workItem from="1563943644701" duration="9777000" />
       <workItem from="1563953462739" duration="13000" />
       <workItem from="1563953839960" duration="116000" />
+      <workItem from="1563954941567" duration="237000" />
+      <workItem from="1563978081940" duration="997000" />
+      <workItem from="1563981099286" duration="5992000" />
     </task>
     <servers />
   </component>
@@ -640,18 +654,60 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="837483000" />
+    <option name="totallyTimeSpent" value="844709000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="616" y="18" width="832" height="804" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.496994" visible="true" weight="0.20542635" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4940476" visible="true" weight="0.27211797" />
+      <window_info id="Structure" order="1" sideWeight="0.5028329" side_tool="true" weight="0.1427614" />
       <window_info id="UI Designer" order="2" />
-      <window_info id="Favorites" order="3" sideWeight="0.50300604" side_tool="true" weight="0.21447721" />
+      <window_info id="Favorites" order="3" sideWeight="0.5028329" side_tool="true" weight="0.1427614" />
       <window_info id="设计器" order="4" />
       <window_info id="Web" order="5" side_tool="true" />
-      <window_info id="JRebel" order="6" sideWeight="0.5023148" side_tool="true" weight="0.38836104" />
+      <window_info id="JRebel" order="6" sideWeight="0.50595236" side_tool="true" weight="0.27390182" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.5967262" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49061662" weight="0.6161473" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.30736545" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="调试" order="14" weight="0.5708215" />
+      <window_info anchor="bottom" id="缩略图" order="15" weight="0.3286119" />
+      <window_info anchor="bottom" id="REST Client" order="16" />
+      <window_info anchor="bottom" id="Problems" order="17" />
+      <window_info anchor="bottom" id="JRebel Executor" order="18" sideWeight="0.49128687" weight="0.48300284" />
+      <window_info anchor="bottom" id="JRebel Console" order="19" sideWeight="0.5093834" side_tool="true" weight="0.35565478" />
+      <window_info anchor="bottom" id="Event Log" order="20" sideWeight="0.4990403" weight="0.40084985" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.17828418" />
+      <window_info anchor="right" id="调色板" order="4" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32962137" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Jms Messenger" order="7" weight="0.3293092" />
+      <window_info anchor="right" id="Bean Validation" order="8" weight="0.3297587" />
+      <window_info anchor="right" id="Key Promoter X" order="9" />
+      <window_info anchor="right" id="JRebel Setup Guide" order="10" weight="0.1313673" />
+      <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.3297587" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4940476" visible="true" weight="0.14142092" />
+      <window_info id="Structure" order="1" sideWeight="0.5028329" side_tool="true" weight="0.1427614" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="3" sideWeight="0.5028329" side_tool="true" weight="0.1427614" />
+      <window_info id="设计器" order="4" />
+      <window_info id="Web" order="5" side_tool="true" />
+      <window_info id="JRebel" order="6" sideWeight="0.50595236" side_tool="true" weight="0.27390182" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="2" weight="0.5967262" />
@@ -671,7 +727,7 @@
       <window_info anchor="bottom" id="REST Client" order="16" />
       <window_info anchor="bottom" id="Problems" order="17" />
       <window_info anchor="bottom" id="JRebel Executor" order="18" sideWeight="0.49128687" weight="0.40509915" />
-      <window_info anchor="bottom" id="JRebel Console" order="19" sideWeight="0.5093834" side_tool="true" weight="0.5708215" />
+      <window_info anchor="bottom" id="JRebel Console" order="19" sideWeight="0.5093834" side_tool="true" weight="0.35565478" />
       <window_info anchor="bottom" id="Event Log" order="20" sideWeight="0.4990403" weight="0.40084985" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -685,42 +741,6 @@
       <window_info anchor="right" id="Key Promoter X" order="9" />
       <window_info anchor="right" id="JRebel Setup Guide" order="10" weight="0.1313673" />
       <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.3297587" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.5107981" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" weight="0.3297587" />
-      <window_info id="设计器" order="4" />
-      <window_info id="Web" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.4966488" weight="0.4957507" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.31009957" />
-      <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5033512" side_tool="true" weight="0.5424929" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="bottom" id="调试" order="15" weight="0.5708215" />
-      <window_info anchor="bottom" id="缩略图" order="16" weight="0.3286119" />
-      <window_info anchor="bottom" id="REST Client" order="17" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.19101876" />
-      <window_info anchor="right" id="调色板" order="4" />
-      <window_info anchor="right" id="Database" order="5" weight="0.32962137" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Jms Messenger" order="7" weight="0.32931727" />
-      <window_info anchor="right" id="Bean Validation" order="8" weight="0.3297587" />
-      <window_info anchor="right" id="Key Promoter X" order="9" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -739,81 +759,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="71" column="69" selection-start-line="71" selection-start-column="69" selection-end-line="71" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/UserRoleMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/UserResourcesMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="64" column="28" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/RoleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/tool/updatelog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="76" column="17" lean-forward="true" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
-          <folding>
-            <element signature="n#style#0;n#form#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/tool/updatelog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="40" column="100" selection-start-line="40" selection-start-column="100" selection-end-line="40" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/UpdateLogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="73" column="41" selection-start-line="73" selection-start-column="41" selection-end-line="73" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/RoleMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -1082,17 +1027,84 @@
         <state relative-caret-position="-684" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="83" column="14" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="14" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/rebel.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Aurora.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4047" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mq/producer/TestSendMail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/EmailController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-722">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-rabbitmq.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="171" column="21" selection-start-line="171" selection-start-column="21" selection-end-line="171" selection-end-column="21" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/AuroraApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ELK+MQ收集日志.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-879">
+            <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback-spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
         </state>
       </provider>
     </entry>
