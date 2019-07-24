@@ -11,11 +11,30 @@ import java.util.List;
  * <p> Description：</p>
  */
 public interface RoleService {
-    //查询全部
-    List roleFindAll(@Param("start") int start, @Param("limit") int limit);
-    //根据description关键字模糊查询角色
-    List roleLikeDesc(String description);
-    //查询总条数
+    /**
+     * 查询全部
+     * @param start
+     * @param limit
+     * @return
+     */
+    List<Role> roleFindAll(@Param("start") int start, @Param("limit") int limit);
+
+    /**
+     * 根据description关键字模糊查询角色
+     * @param description
+     * @return
+     */
+    List<Role> roleLikeDesc(String description, @Param("start") int start, @Param("limit") int limit);
+
+    /**
+     * 根据description关键字模糊查询角色条数
+     */
+    Integer countLikeDesc(String description);
+
+    /**
+     * 查询总条数
+     * @return
+     */
     int roleCount();
 
     /**

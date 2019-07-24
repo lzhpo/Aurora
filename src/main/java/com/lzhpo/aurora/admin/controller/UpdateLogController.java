@@ -60,20 +60,19 @@ public class UpdateLogController {
         int limit = Integer.parseInt(request.getParameter("limit"));
         //作为sql语句的限制条件
         int start = limit * (page - 1);
-        int count = updateLogService.UpdateLogCount();
         LayuiData layuiData = new LayuiData();
         String description = request.getParameter("description");
         /** 没有传入参数，查询全部 **/
         if (description == null || description == ""){
             //查询所有数据
-            List data = updateLogService.getUpdateLog(start,limit);
-            layuiData.setCount(count);
-            layuiData.setData(data);
+            List<UpdateLog> updateLog = updateLogService.getUpdateLog(start, limit);
+            layuiData.setCount(updateLogService.UpdateLogCount());
+            layuiData.setData(updateLog);
         } else {    /** 传入description参数，模糊查询**/
             //根据description查询
-            List data = updateLogService.getUpdateLogByDesc(description);
-            layuiData.setCount(count);
-            layuiData.setData(data);
+            List<UpdateLog> updateLogByDesc = updateLogService.getUpdateLogByDesc(description, start, limit);
+            layuiData.setCount(updateLogService.countUpdateLogByDesc(description));
+            layuiData.setData(updateLogByDesc);
         }
         return layuiData;
     }

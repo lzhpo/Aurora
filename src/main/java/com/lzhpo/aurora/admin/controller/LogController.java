@@ -67,7 +67,6 @@ public class LogController {
         int limit = Integer.parseInt(request.getParameter("limit"));
         //作为sql语句的限制条件
         int start = limit * (page - 1);
-        int count = logService.logCount();
         String operation = request.getParameter("operation");
         /** 是否启用ES **/
         if (ESEnable){ //如果启用ES
@@ -93,11 +92,11 @@ public class LogController {
             if (operation == null || operation == ""){
                 List<Log> data = logService.logFindAll(start, limit);
                 layuiData.setData(data);
-                layuiData.setCount(count);
+                layuiData.setCount(logService.logCount());
             } else {
-                List<Log> data = logService.logFindByOprt(operation);
+                List<Log> data = logService.logFindByOprt(operation, start, limit);
                 layuiData.setData(data);
-                layuiData.setCount(count);
+                layuiData.setCount(logService.countFindByOprt(operation));
             }
         }
         return layuiData;

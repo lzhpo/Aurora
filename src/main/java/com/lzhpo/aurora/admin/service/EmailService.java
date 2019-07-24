@@ -22,10 +22,13 @@ public interface EmailService {
 
     /**
      * 根据邮件内容模糊查询
-     * @param content
-     * @return
      */
-    List<Email> findEmailLikeContent(String content);
+    List<Email> findEmailLikeContent(String content, @Param("start") int start, @Param("limit") int limit);
+
+    /**
+     * 根据邮件内容模糊查询总条数
+     */
+    Integer countEmailLikeContent(String content);
 
     /**
      * 统计条数

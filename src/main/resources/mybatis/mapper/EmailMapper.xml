@@ -46,6 +46,13 @@
         select email_id, title, content, send_date, username
         from tool_email
         where content like concat('%',#{content},'%')
+        limit #{start},#{limit}
+    </select>
+
+    <select id="countEmailLikeContent" resultType="java.lang.Integer">
+        select count(email_id)
+        from tool_email
+        where content like concat('%',#{content},'%')
     </select>
 
 

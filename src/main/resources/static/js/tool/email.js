@@ -141,27 +141,33 @@ layui.use(['form', 'layedit', 'layer', 'table'], function() {
 
 //发送邮件
 function sendEmail() {
-    //loading层，发送邮件完毕--->执行完毕，关闭loading--->layer.close(index);
-    var index = layer.load(1, {
-        shade: [0.5,'#fff'] //0.5透明度的白色背景
-    });
-    //发送邮件，提交ajax请求
-    $.ajax({
-        url: '/admin/tool/email/submit',
-        type: 'post',
-        data: $("#emailFromId").serialize(),
-        dataType: 'json',
-        success: function (res) {
-            if (res.code === 0){
-                layer.msg(res.msg,{icon: 1});
-                setTimeout("window.location.reload();", 2000);
+    layui.use('layer', function(){
+        var layer = layui.layer;
+
+        //loading层，发送邮件完毕--->执行完毕，关闭loading--->layer.close(index);
+        var index = layer.load(1, {
+            shade: [0.5,'#fff'] //0.5透明度的白色背景
+        });
+        //发送邮件，提交ajax请求
+        $.ajax({
+            url: '/admin/tool/email/submit',
+            type: 'post',
+            data: $("#emailFromId").serialize(),
+            dataType: 'json',
+            success: function (res) {
+                if (res.code === 0){
+                    layer.msg(res.msg,{icon: 1});
+                    setTimeout("window.location.reload();", 2000);
+                    layer.close(index);    //执行完毕，关闭loading
+                } else {
+                    layer.alert(res.msg, {icon: 3});
+                    layer.close(index);    //执行完毕，关闭loading
+                }
+            },
+            error: function () {
+                layer.alert('服务器内部错误，发送失败！', {icon: 3});
                 layer.close(index);    //执行完毕，关闭loading
-            } else {
-                layer.alert(res.msg, {icon: 3});
             }
-        },
-        error: function () {
-            layer.alert('服务器内部错误，发送失败！', {icon: 3});
-        }
+        });
     });
 }

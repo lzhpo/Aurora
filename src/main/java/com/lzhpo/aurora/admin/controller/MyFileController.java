@@ -75,15 +75,15 @@ public class MyFileController {
         int page = Integer.parseInt(request.getParameter("page"));
         int limit = Integer.parseInt(request.getParameter("limit"));
         int start = (page - 1) * limit;
-        int fileCount = myFileService.fileCount();
-        layuiData.setCount(fileCount);
         String file_name = request.getParameter("file_name");
         if (file_name == null || file_name == ""){
             List<MyFile> filePage = myFileService.findFilePage(start, limit);
             layuiData.setData(filePage);
+            layuiData.setCount(myFileService.fileCount());
         } else {
-            List<MyFile> likeName = myFileService.findLikeName(file_name);
+            List<MyFile> likeName = myFileService.findFileLikeName(file_name, start, limit);
             layuiData.setData(likeName);
+            layuiData.setCount(myFileService.countFileLikeName(file_name));
         }
         return layuiData;
     }
@@ -261,15 +261,15 @@ public class MyFileController {
         int limit = Integer.valueOf(request.getParameter("limit"));
         //起始页数
         int start = (page - 1) * limit;
-        int dllogCount = downLoadLogService.dllogCount();
-        layuiData.setCount(dllogCount);
         String file_name = request.getParameter("file_name");
         if (file_name == null || file_name == ""){
             List<DownLoadLog> downLoadLogList = downLoadLogService.findAll(start, limit);
             layuiData.setData(downLoadLogList);
+            layuiData.setCount(downLoadLogService.dllogCount());
         } else {
-            List<MyFile> fileLikeName = downLoadLogService.findFileLikeName(file_name);
+            List<MyFile> fileLikeName = downLoadLogService.findFileLikeName(file_name, start, limit);
             layuiData.setData(fileLikeName);
+            layuiData.setCount(downLoadLogService.countFileLikeName(file_name));
         }
         return layuiData;
     }

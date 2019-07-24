@@ -16,25 +16,56 @@ import java.util.List;
  */
 public interface UpdateLogService {
 
-    // 查询所有更新记录
-    List getUpdateLog(@Param("start") int start, @Param("limit") int limit);
+    /**
+     * 查询所有更新记录
+     * @param start
+     * @param limit
+     * @return
+     */
+    List<UpdateLog> getUpdateLog(@Param("start") int start, @Param("limit") int limit);
 
-    // 通过description查询更新记录
-    List getUpdateLogByDesc(String desc);
+    /**
+     * 通过description查询更新记录
+     * @param description
+     * @return
+     */
+    List<UpdateLog> getUpdateLogByDesc(String description, @Param("start") int start, @Param("limit") int limit);
 
-    //删除更新记录
+    /**
+     * 通过description查询更新记录总条数
+     * @param description
+     * @return
+     */
+    Integer countUpdateLogByDesc(String description);
+
+    /**
+     * 删除更新记录
+     * @param id
+     */
     void deleteUpdateLogByID(Integer id);
 
-    // 新增更新记录
-    void addUpdateLogData(UpdateLog update);
+    /**
+     * 新增更新记录
+     * @param updateLog
+     */
+    void addUpdateLogData(UpdateLog updateLog);
 
-    //批量删除更新记录
+    /**
+     * 批量删除更新记录
+     * @param ids
+     */
     void batchDelete(String[] ids);
 
-    // 编辑更新记录
-    void editUpdateLogById(UpdateLog update);
+    /**
+     * 编辑更新记录
+     * @param updateLog
+     */
+    void editUpdateLogById(UpdateLog updateLog);
 
-    // 查询总共有多少条数据
+    /**
+     * 查询总共有多少条数据
+     * @return
+     */
     int UpdateLogCount();
 
 }

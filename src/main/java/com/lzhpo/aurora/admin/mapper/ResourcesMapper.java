@@ -11,15 +11,35 @@ import java.util.List;
  */
 public interface ResourcesMapper {
 
-    //查找全部
+    /**
+     * 查找全部
+     * @return
+     */
     List<Resources> resourcesFindAll();
-    //根据资源名字模糊查询
+
+    /**
+     * 根据资源名字模糊查询
+     * @param resourcee_name
+     * @return
+     */
     List<Resources> resourcesFindLikeName(String resourcee_name);
-    //根据id删除
+
+    /**
+     * 根据id删除
+     * @param resources_id
+     */
     void resourcesDelOne(Integer resources_id);
-    //统计所有条数
+
+    /**
+     * 统计所有条数
+     * @return
+     */
     int resourcesCount();
-    //查询权限树
+
+    /**
+     * 查询权限树
+     * @return
+     */
     List<Resources> resourcesTree();
 
     /**

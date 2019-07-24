@@ -32,12 +32,18 @@ public class BlogTypeServiceImpl implements BlogTypeService {
 
     @Override
     @Cacheable(cacheNames = "blogType")
-    public List<BlogType> selectByLikeName(String tpyeName) {
-        return blogTypeMapper.selectByLikeName(tpyeName);
+    public List<BlogType> selectByLikeName(String typeName, int start, int limit) {
+        return blogTypeMapper.selectByLikeName(typeName, start, limit);
     }
 
     @Override
-    @CachePut(cacheNames = "blogType",unless="#result == null")
+    @Cacheable(cacheNames = "blogType")
+    public Integer countByLikeName(String typeName) {
+        return blogTypeMapper.countByLikeName(typeName);
+    }
+
+    @Override
+    @Cacheable(cacheNames = "blogType")
     public int count() {
         return blogTypeMapper.count();
     }

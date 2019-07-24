@@ -23,10 +23,13 @@ public interface DownLoadLogMapper {
 
     /**
      * 根据文件名模糊查询
-     * @param file_name
-     * @return
      */
-    List<MyFile> findFileLikeName(String file_name);
+    List<MyFile> findFileLikeName(String file_name, @Param("start") int start, @Param("limit") int limit);
+
+    /**
+     * 根据文件名模糊查询，统计条数
+     */
+    Integer countFileLikeName(String file_name);
 
     /**
      * 统计条数

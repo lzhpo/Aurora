@@ -39,13 +39,13 @@ public class BlogTagServiceImpl implements BlogTagService {
     }
 
     @Override
-    @CachePut(cacheNames = "blogTag",unless="#result == null")
+    @Cacheable(cacheNames = "blogTag")
     public Integer countByLikeName(String tagName) {
         return blogTagMapper.countByLikeName(tagName);
     }
 
     @Override
-    @CachePut(cacheNames = "blogTag",unless="#result == null")
+    @Cacheable(cacheNames = "blogTag")
     public int count() {
         return blogTagMapper.count();
     }

@@ -29,6 +29,10 @@
     </select>
 
     <select id="findFileLikeName" resultType="com.lzhpo.aurora.admin.entity.MyFile">
-        select dllog_id,file_name,dllog_date,username from tool_dllog where file_name like concat('%',#{file_name},'%')
+        select dllog_id,file_name,dllog_date,username from tool_dllog where file_name like concat('%',#{file_name},'%') limit #{start},#{limit}
+    </select>
+
+    <select id="countFileLikeName" resultType="java.lang.Integer">
+        select count(dllog_id) from tool_dllog where file_name like concat('%',#{file_name},'%')
     </select>
 </mapper>

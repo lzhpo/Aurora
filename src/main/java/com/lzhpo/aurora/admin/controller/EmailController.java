@@ -123,15 +123,15 @@ public class EmailController {
         int page = Integer.parseInt(request.getParameter("page"));
         int limit = Integer.parseInt(request.getParameter("limit"));
         int start = (page - 1) * limit;
-        int emailCount = emailService.emailCount();
-        layuiData.setCount(emailCount);
         String content = request.getParameter("content");
         if (content == null || content == ""){
             List<Email> emailByPage = emailService.findEmailByPage(start, limit);
             layuiData.setData(emailByPage);
+            layuiData.setCount(emailService.emailCount());
         } else {
-            List<Email> emailLikeContent = emailService.findEmailLikeContent(content);
+            List<Email> emailLikeContent = emailService.findEmailLikeContent(content, start, limit);
             layuiData.setData(emailLikeContent);
+            layuiData.setCount(emailService.countEmailLikeContent(content));
         }
         return layuiData;
     }

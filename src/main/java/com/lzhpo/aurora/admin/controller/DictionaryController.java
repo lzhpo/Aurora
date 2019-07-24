@@ -43,17 +43,15 @@ public class DictionaryController {
         int page = Integer.parseInt(request.getParameter("page"));
         int limit = Integer.parseInt(request.getParameter("limit"));
         int start = (page - 1) * limit;
-        int count = dictionaryService.count();
-        String columName = request.getParameter("columName");
-        if (columName == null || columName == ""){
+        String tableName = request.getParameter("tableName");
+        if (tableName == null || tableName == ""){
             List<Dictionary> data = dictionaryService.findAll(start, limit);
             layuiData.setData(data);
-            layuiData.setCount(count);
-            return layuiData;
+            layuiData.setCount(dictionaryService.count());
         } else {
-            List<Dictionary> data = dictionaryService.findLikeColumName(columName);
+            List<Dictionary> data = dictionaryService.findLikeColumName(tableName, start, limit);
             layuiData.setData(data);
-            layuiData.setCount(count);
+            layuiData.setCount(dictionaryService.countLikeColumName(tableName));
         }
         return layuiData;
     }

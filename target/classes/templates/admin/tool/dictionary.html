@@ -33,14 +33,23 @@
 </section>
 
 <div style="margin-top: 15px;">
+    <div class="demoTable" style="margin-left: 10px;">
+        搜索数据表名称<small>(在数据库Aurora中)</small>：
+        <div class="layui-inline">
+            <input type="text" class="layui-input" name="tableName" id="tableNameContentReload" autocomplete="off">
+        </div>
+        <button class="layui-btn layui-btn-normal" id="tableNameSearch" data-type="reload">
+            <i class="layui-icon">&#xe615;</i> 搜索
+        </button>
+        <button class="layui-btn layui-btn-warm" onclick="window.location.reload();">
+            <i class="layui-icon">&#xe669;</i> 刷新
+        </button>
+    </div>
     <table class="layui-hide" id="logList" lay-filter="logTable"></table>
     <script type="text/html" id="logToolbar">
         <div class="layui-btn-container">
             <button shiro:hasPermission="dictionary:look" lay-event="getCheckData" class="layui-btn layui-btn-sm layui-btn-normal">
-                <i class="layui-icon">&#xe705;</i> 查看
-            </button>
-            <button class="layui-btn layui-btn-sm layui-btn-warm" onclick="window.location.reload();">
-                <i class="layui-icon">&#xe669;</i> 刷新
+                <i class="layui-icon">&#xe705;</i> 查看JSON数据
             </button>
         </div>
     </script>

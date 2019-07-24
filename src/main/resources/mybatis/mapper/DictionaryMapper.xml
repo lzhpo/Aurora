@@ -44,6 +44,15 @@
         FROM
             information_schema. COLUMNS
         WHERE
-            TABLE_SCHEMA = 'aurora' And COLUMN_NAME LIKE concat('%',#{columName},'%')
+            TABLE_SCHEMA = 'aurora' And TABLE_NAME LIKE concat('%',#{tableName},'%')
+        LIMIT #{start},#{limit}
+    </select>
+
+    <select id="countLikeColumName" resultType="java.lang.Integer">
+        SELECT COUNT(COLUMN_NAME)
+        FROM
+            information_schema. COLUMNS
+        WHERE
+            TABLE_SCHEMA = 'aurora' And TABLE_NAME LIKE concat('%',#{tableName},'%')
     </select>
 </mapper>

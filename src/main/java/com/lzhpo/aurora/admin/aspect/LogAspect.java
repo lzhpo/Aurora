@@ -141,12 +141,12 @@ public class LogAspect {
         log.setCreate_time(new Date());
 
         //1.使用jdk自带的方法--->获取计算机用户名
-//        String username = System.getProperty("user.name");
-//        log.setUsername(username);
-//        log.setUsername(username);
+        String username = System.getProperty("user.name");
+        log.setUsername(username);
+        log.setUsername(username);
         //2.使用shiro获取操作的用户
-        User user = (User) SecurityUtils.getSubject().getPrincipal(); //获取操作的用户名
-        log.setUsername(user.getUsername());
+//        User user = (User) SecurityUtils.getSubject().getPrincipal(); //获取操作的用户名
+//        log.setUsername(user.getUsername());
 
         /**获取用户ip地址**/
         HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes())

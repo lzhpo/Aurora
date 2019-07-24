@@ -36,7 +36,7 @@
         </foreach>
     </delete>
 
-    <!-- 通过ID查询更新记录 -->
+    <!-- 通过更新描述查询更新记录 -->
     <select id="getUpdateLogByDesc" resultType="com.lzhpo.aurora.admin.entity.UpdateLog">
         SELECT
             updatelog_id,
@@ -46,6 +46,7 @@
             tool_updatelog
         WHERE
             description LIKE concat('%',#{description},'%')
+        LIMIT #{start},#{limit}
     </select>
 
     <!-- 编辑更新记录 -->
@@ -76,6 +77,14 @@
             COUNT(updatelog_id)
         FROM
             tool_updatelog;
+    </select>
+
+    <select id="countUpdateLogByDesc" resultType="java.lang.Integer">
+        SELECT COUNT(updatelog_id)
+        FROM
+            tool_updatelog
+        WHERE
+            description LIKE concat('%',#{description},'%')
     </select>
 
 </mapper>

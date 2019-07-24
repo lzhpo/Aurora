@@ -32,8 +32,14 @@ public class MyFileServiceImpl implements MyFileService {
 
     @Override
     @Cacheable(cacheNames = "file")
-    public List<MyFile> findFileLikeName(String file_name) {
-        return MyFileMapper.findFileLikeName(file_name);
+    public List<MyFile> findFileLikeName(String file_name, int start, int limit) {
+        return MyFileMapper.findFileLikeName(file_name, start, limit);
+    }
+
+    @Override
+    @Cacheable(cacheNames = "file")
+    public Integer countFileLikeName(String file_name) {
+        return MyFileMapper.countFileLikeName(file_name);
     }
 
     @Override
@@ -61,7 +67,7 @@ public class MyFileServiceImpl implements MyFileService {
     }
 
     @Override
-    @CachePut(cacheNames = "file", unless="#result == null")
+    @Cacheable(cacheNames = "file")
     public int fileCount() {
         return MyFileMapper.fileCount();
     }
@@ -72,9 +78,4 @@ public class MyFileServiceImpl implements MyFileService {
         MyFileMapper.saveFile(file);
     }
 
-    @Override
-    @Cacheable(cacheNames = "file")
-    public List<MyFile> findLikeName(String file_name) {
-        return MyFileMapper.findLikeName(file_name);
-    }
 }

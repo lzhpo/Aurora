@@ -61,16 +61,15 @@ public class UserController {
         int limit = Integer.parseInt(request.getParameter("limit"));
         //sql限制条件
         int start = (page -1) * limit;
-        int userCount = userService.userCount();
-        layuiData.setCount(userCount);
         String username = request.getParameter("username");
         if (username == null || username ==""){
             List data = userService.userFindAll(start, limit);
             layuiData.setData(data);
-            return layuiData;
+            layuiData.setCount(userService.userCount());
         } else {
-            List data = userService.userFindLikeName(username);
+            List data = userService.userFindLikeName(username, start, limit);
             layuiData.setData(data);
+            layuiData.setCount(userService.countFindLikeName(username));
         }
         return layuiData;
     }

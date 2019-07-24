@@ -81,4 +81,4 @@ myEmail:
 
 # 是否启用ES查询数据？true/false
 ES:
-  Enable: false
+  Enable: true

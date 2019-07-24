@@ -25,7 +25,8 @@ public class BlogArticleServiceImpl implements BlogArticleService {
     private BlogArticleMapper blogArticleMapper;
 
     @Override
-    @CachePut(cacheNames = "blogArticle",unless="#result == null") //因为统计所有条数的话，基于我使用的layui，加上业务需求，我的做法是使用@CachePut，每次查询的结果都放Redis缓存中进去。
+    @Cacheable(cacheNames = "blogArticle")
+//    @CachePut(cacheNames = "blogArticle",unless="#result == null") //因为统计所有条数的话，基于我使用的layui，加上业务需求，我的做法是使用@CachePut，每次查询的结果都放Redis缓存中进去。
     public int count() {
         return blogArticleMapper.count();
     }
@@ -43,6 +44,7 @@ public class BlogArticleServiceImpl implements BlogArticleService {
     }
 
     @Override
+    @Cacheable(cacheNames = "blogArticle")
     public Integer countByLikeContent(String content) {
         return blogArticleMapper.countByLikeContent(content);
     }

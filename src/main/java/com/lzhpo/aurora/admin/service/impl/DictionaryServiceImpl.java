@@ -31,9 +31,16 @@ public class DictionaryServiceImpl implements DictionaryService {
 
     @Override
     @Cacheable(cacheNames = "dictionary")
-    public List<Dictionary> findLikeColumName(String columName) {
-        return dictionaryMapper.findLikeColumName(columName);
+    public List<Dictionary> findLikeColumName(String tableName, int start, int limit) {
+        return dictionaryMapper.findLikeColumName(tableName, start, limit);
     }
+
+    @Override
+    @Cacheable(cacheNames = "dictionary")
+    public Integer countLikeColumName(String tableName) {
+        return dictionaryMapper.countLikeColumName(tableName);
+    }
+
 
     @Override
     @CachePut(cacheNames = "dictionary", unless="#result == null")

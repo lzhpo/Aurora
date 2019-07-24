@@ -38,7 +38,7 @@
 
     <!--根据description模糊查询-->
     <select id="roleLikeDesc" resultType="com.lzhpo.aurora.admin.entity.Role">
-        select role_id,role_name,description from sys_role where description like concat('%',#{description},'%')
+        select role_id,role_name,description from sys_role where description like concat('%',#{description},'%') limit #{start},#{limit}
     </select>
 
     <!--统计条数-->
@@ -49,6 +49,10 @@
     <!-- 查询所有角色 -->
     <select id="findAllRole" resultType="com.lzhpo.aurora.admin.entity.Role">
         select role_id, role_name, description from sys_role
+    </select>
+
+    <select id="countLikeDesc" resultType="java.lang.Integer">
+        select count(role_id) from sys_role where description like concat('%',#{description},'%')
     </select>
 
 </mapper>

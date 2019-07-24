@@ -49,18 +49,17 @@ public class RoleController {
         int limit = Integer.parseInt(request.getParameter("limit"));
         //sql限制条件
         int start = (page -1) * limit;
-        int roleCount = roleService.roleCount();
         LayuiData layuiData = new LayuiData();
         String description = request.getParameter("description");
         //未输入描述，查询全部
         if (description == null || description == ""){
             List data = roleService.roleFindAll(start, limit);
-            layuiData.setCount(roleCount);
+            layuiData.setCount(roleService.roleCount());
             layuiData.setData(data);
             return layuiData;
         } else { //根据description模糊查询
-            List data = roleService.roleLikeDesc(description);
-            layuiData.setCount(roleCount);
+            List data = roleService.roleLikeDesc(description, start, limit);
+            layuiData.setCount(roleService.countLikeDesc(description));
             layuiData.setData(data);
         }
         return layuiData;

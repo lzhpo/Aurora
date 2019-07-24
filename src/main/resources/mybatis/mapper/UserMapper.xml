@@ -48,7 +48,7 @@
 
     <!--根据username模糊查询-->
     <select id="userFindLikeName" resultType="com.lzhpo.aurora.admin.entity.User">
-        select user_id,username,password,email,sex,status from sys_user where username like concat('%',#{username},'%')
+        select user_id,username,password,email,sex,status from sys_user where username like concat('%',#{username},'%') limit #{start},#{limit}
     </select>
 
     <!--统计所有条数-->
@@ -59,6 +59,10 @@
     <!--根据用户名查询用户 登录-->
     <select id="userFindByName" resultType="com.lzhpo.aurora.admin.entity.User">
         select user_id,username,password,email,sex,status from sys_user where username = #{username}
+    </select>
+
+    <select id="countFindLikeName" resultType="java.lang.Integer">
+        select count(user_id) from sys_user where username like concat('%',#{username},'%')
     </select>
 
 </mapper>

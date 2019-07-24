@@ -17,7 +17,29 @@ layui.use('table', function(){
             ]
         ]
         ,page: {page: true, theme: '#1E9FFF'}
+        ,id: 'dictionaryTableId'
     });
+
+    //表格重载
+    var $ = layui.$, active = {
+        reload: function(){
+            //执行重载
+            table.reload('dictionaryTableId', { //表格的id
+                page: {
+                    curr: 1 //重新从第 1 页开始
+                }
+                ,where: {
+                    tableName: $('#tableNameContentReload').val()
+                }
+            });
+        }
+    };
+
+    $('#tableNameSearch').on('click', function(){
+        var type = $(this).data('type');
+        active[type] ? active[type].call(this) : '';
+    });
+
 
     //头工具栏事件
     table.on('toolbar(logTable)', function(obj){

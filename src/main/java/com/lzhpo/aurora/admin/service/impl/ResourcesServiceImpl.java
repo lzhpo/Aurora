@@ -44,7 +44,7 @@ public class ResourcesServiceImpl implements ResourcesService {
     }
 
     @Override
-    @CachePut(cacheNames = "resources", unless="#result == null")
+    @Cacheable(cacheNames = "resources")
     public int resourcesCount() {
         return resourcesMapper.resourcesCount();
     }

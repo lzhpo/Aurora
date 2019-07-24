@@ -84,6 +84,15 @@
         FROM
             tool_myfile
         where file_name like concat('%',#{file_name},'%')
+        LIMIT #{start},#{limit}
+    </select>
+
+    <select id="countFileLikeName" resultType="java.lang.Integer">
+        SELECT
+            COUNT(file_id)
+        FROM
+            tool_myfile
+        where file_name like concat('%',#{file_name},'%')
     </select>
 
 </mapper>

@@ -32,12 +32,18 @@ public class EmailServiceImpl implements EmailService {
 
     @Override
     @Cacheable(cacheNames = "email")
-    public List<Email> findEmailLikeContent(String content) {
-        return emailMapper.findEmailLikeContent(content);
+    public List<Email> findEmailLikeContent(String content, int start, int limit) {
+        return emailMapper.findEmailLikeContent(content, start, limit);
     }
 
     @Override
-    @CachePut(cacheNames = "email", unless="#result == null")
+    @Cacheable(cacheNames = "email")
+    public Integer countEmailLikeContent(String content) {
+        return emailMapper.countEmailLikeContent(content);
+    }
+
+    @Override
+    @Cacheable(cacheNames = "email")
     public int emailCount() {
         return emailMapper.emailCount();
     }

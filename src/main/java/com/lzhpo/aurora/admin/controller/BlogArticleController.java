@@ -156,7 +156,7 @@ public class BlogArticleController {
     }
 
     /**
-     * 发布文章
+     * 发布文章：同时保存到MySQL和ES中。
      */
     @RequestMapping("/blogArticle/add")
     @ResponseBody
@@ -180,7 +180,7 @@ public class BlogArticleController {
     }
 
     /**
-     * 删除单个文章
+     * 删除单个文章：同时删除ES中的和MySQL中的。
      */
     @RequestMapping("/blogArticle/delBlog")
     @ResponseBody
@@ -191,6 +191,8 @@ public class BlogArticleController {
         try {
             blogArticleService.delBlog(blogId);
             layuiData.setMsg("删除成功！");
+            /** 删除ES中的 **/
+            blogArticleRepository.deleteById(blogId);
         } catch (Exception e) {
             e.printStackTrace();
             layuiData.setCode(-1);
@@ -200,7 +202,7 @@ public class BlogArticleController {
     }
 
     /**
-     * 批量删除
+     * 批量删除：同时删除ES中的和MySQL中的。
      */
     @RequestMapping("/blogArticle/batchDel")
     @ResponseBody
@@ -212,6 +214,10 @@ public class BlogArticleController {
         try {
             blogArticleService.batchDelBlog(splitIds);
             layuiData.setMsg("删除成功！");
+            /** 删除ES中的 **/
+            for (String splitId : splitIds) {
+                blogArticleRepository.deleteById(Integer.parseInt(splitId));
+            }
         } catch (Exception e) {
             e.printStackTrace();
             layuiData.setMsg("删除失败！");
@@ -236,7 +242,7 @@ public class BlogArticleController {
     }
 
     /**
-     * 修改博客
+     * 修改博客：同时修改MySQL中的和ES中的。
      */
     @RequestMapping("/blogArticle/editBlog")
     @ResponseBody
@@ -246,6 +252,8 @@ public class BlogArticleController {
         try {
             blogArticleService.updateBlog(blogArticle);
             layuiData.setMsg("修改成功！");
+            /** 修改博客，更新ES中的此条博客数据，存在主键即可 **/
+            blogArticleRepository.save(blogArticle);
         } catch (Exception e) {
             e.printStackTrace();
             layuiData.setCode(-1);

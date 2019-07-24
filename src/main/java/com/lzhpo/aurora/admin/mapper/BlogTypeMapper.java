@@ -17,10 +17,13 @@ public interface BlogTypeMapper {
 
     /**
      * 模糊查询，根据type_name
-     * @param tpyeName
-     * @return
      */
-    List<BlogType> selectByLikeName(String tpyeName);
+    List<BlogType> selectByLikeName(String typeName, @Param("start") int start, @Param("limit") int limit);
+
+    /**
+     * 模糊查询，根据type_name查询总条数
+     */
+    Integer countByLikeName(String typeName);
 
     /**
      * 统计所有条数

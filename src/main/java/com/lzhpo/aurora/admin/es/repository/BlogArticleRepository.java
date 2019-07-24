@@ -29,4 +29,5 @@ public interface BlogArticleRepository extends ElasticsearchCrudRepository<BlogA
      * 根据文章内容模糊查询分页查询ES中的文章总数
      */
     Integer countAllByContent(String content);
+
 }

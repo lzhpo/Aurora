@@ -11,13 +11,40 @@ import java.util.List;
  * <p> Description：</p>
  */
 public interface UserMapper {
-    //查询全部
-    List userFindAll(@Param("start") int start, @Param("limit") int limit);
-    //根据用户名查询(登录)
+
+    /**
+     * 查询全部
+     * @param start
+     * @param limit
+     * @return
+     */
+    List<User> userFindAll(@Param("start") int start, @Param("limit") int limit);
+
+    /**
+     * 根据用户名查询(登录)
+     * @param username
+     * @return
+     */
     User userFindByName(String username);
-    //根据用户名称模糊查询
-    List userFindLikeName(String username);
-    //统计所有条数
+
+    /**
+     * 根据用户名称模糊查询
+     * @param username
+     * @return
+     */
+    List<User> userFindLikeName(String username, @Param("start") int start, @Param("limit") int limit);
+
+    /**
+     * 根据用户名称模糊查询总条数
+     * @param username
+     * @return
+     */
+    Integer countFindLikeName(String username);
+
+    /**
+     * 统计所有条数
+     * @return
+     */
     int userCount();
 
     /**

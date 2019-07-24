@@ -11,12 +11,29 @@ import java.util.List;
  * <p> Description：</p>
  */
 public interface LogMapper {
-    //apo自动插入操作日志
+    /**
+     * AOP自动保存操作日志
+     * @param log
+     */
     void saveLog(Log log);
     List<Log> logFindAll(@Param("start") int start, @Param("limit") int limit);
-    //根据方法名查询
-    List<Log> logFindByOprt(String operation);
-    //统计条数
+
+    /**
+     * 根据方法名查询
+     * @param operation
+     * @return
+     */
+    List<Log> logFindByOprt(String operation, @Param("start") int start, @Param("limit") int limit);
+
+    /**
+     * 根据方法名查询总条数
+     */
+    Integer countFindByOprt(String operation);
+
+    /**
+     * 统计条数
+     * @return
+     */
     int logCount();
 
     /**

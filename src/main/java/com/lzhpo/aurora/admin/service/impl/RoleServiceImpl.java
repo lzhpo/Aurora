@@ -27,18 +27,24 @@ public class RoleServiceImpl implements RoleService {
 
     @Override
     @Cacheable(cacheNames = "role")
-    public List roleFindAll(int start, int limit) {
+    public List<Role> roleFindAll(int start, int limit) {
         return roleMapper.roleFindAll(start, limit);
     }
 
     @Override
     @Cacheable(cacheNames = "role")
-    public List roleLikeDesc(String description) {
-        return roleMapper.roleLikeDesc(description);
+    public List<Role> roleLikeDesc(String description, int start, int limit) {
+        return roleMapper.roleLikeDesc(description, start, limit);
     }
 
     @Override
-    @CachePut(cacheNames = "role", unless="#result == null")
+    @Cacheable(cacheNames = "role")
+    public Integer countLikeDesc(String description) {
+        return roleMapper.countLikeDesc(description);
+    }
+
+    @Override
+    @Cacheable(cacheNames = "role")
     public int roleCount() {
         return roleMapper.roleCount();
     }

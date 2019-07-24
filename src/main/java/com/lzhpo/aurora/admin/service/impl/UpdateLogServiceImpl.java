@@ -44,14 +44,20 @@ public class UpdateLogServiceImpl implements UpdateLogService {
 
     @Override
     @Cacheable(cacheNames = "updateLog")
-    public List getUpdateLog(int start, int limit) {
+    public List<UpdateLog> getUpdateLog(int start, int limit) {
         return updateLogMapper.getUpdateLog(start, limit);
     }
 
     @Override
     @Cacheable(cacheNames = "updateLog")
-    public List getUpdateLogByDesc(String desc) {
-        return updateLogMapper.getUpdateLogByDesc(desc);
+    public List<UpdateLog> getUpdateLogByDesc(String description, int start, int limit) {
+        return updateLogMapper.getUpdateLogByDesc(description, start, limit);
+    }
+
+    @Override
+    @Cacheable(cacheNames = "updateLog")
+    public Integer countUpdateLogByDesc(String description) {
+        return updateLogMapper.countUpdateLogByDesc(description);
     }
 
     @Override
@@ -79,7 +85,7 @@ public class UpdateLogServiceImpl implements UpdateLogService {
     }
 
     @Override
-    @CachePut(cacheNames = "updateLog", unless="#result == null") //因为统计所有条数的话，基于我使用的layui，加上业务需求，我的做法是使用@CachePut，每次查询的结果都放Redis缓存中进去。
+    @Cacheable(cacheNames = "updateLog")
     public int UpdateLogCount() {
         return updateLogMapper.UpdateLogCount();
     }

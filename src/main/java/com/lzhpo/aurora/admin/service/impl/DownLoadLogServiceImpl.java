@@ -33,12 +33,18 @@ public class DownLoadLogServiceImpl implements DownLoadLogService {
 
     @Override
     @Cacheable(cacheNames = "dllog")
-    public List<MyFile> findFileLikeName(String file_name) {
-        return downLoadLogMapper.findFileLikeName(file_name);
+    public List<MyFile> findFileLikeName(String file_name, int start, int limit) {
+        return downLoadLogMapper.findFileLikeName(file_name, start, limit);
     }
 
     @Override
-    @CachePut(cacheNames = "dllog", unless="#result == null")
+    @Cacheable(cacheNames = "dllog")
+    public Integer countFileLikeName(String file_name) {
+        return downLoadLogMapper.countFileLikeName(file_name);
+    }
+
+    @Override
+    @Cacheable(cacheNames = "dllog")
     public int dllogCount() {
         return downLoadLogMapper.dllogCount();
     }

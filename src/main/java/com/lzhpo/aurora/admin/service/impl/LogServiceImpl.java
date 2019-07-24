@@ -38,12 +38,18 @@ public class LogServiceImpl implements LogService {
 
     @Override
     @Cacheable(cacheNames = "log")
-    public List<Log> logFindByOprt(String operation) {
-        return logMapper.logFindByOprt(operation);
+    public List<Log> logFindByOprt(String operation, int start, int limit) {
+        return logMapper.logFindByOprt(operation, start, limit);
     }
 
     @Override
-    @CachePut(cacheNames = "log", unless="#result == null")
+    @Cacheable(cacheNames = "log")
+    public Integer countFindByOprt(String operation) {
+        return logMapper.countFindByOprt(operation);
+    }
+
+    @Override
+    @Cacheable(cacheNames = "log")
     public int logCount() {
         return logMapper.logCount();
     }

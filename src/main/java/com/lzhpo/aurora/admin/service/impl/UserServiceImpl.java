@@ -32,18 +32,25 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    @CachePut(cacheNames = "user", unless="#result == null")
     public User userFindByName(String username) {
         return userMapper.userFindByName(username);
     }
 
     @Override
     @Cacheable(cacheNames = "user")
-    public List userFindLikeName(String username) {
-        return userMapper.userFindLikeName(username);
+    public List<User> userFindLikeName(String username, int start, int limit) {
+        return userMapper.userFindLikeName(username, start, limit);
     }
 
     @Override
-    @CachePut(cacheNames = "user", unless="#result == null")
+    @Cacheable(cacheNames = "user")
+    public Integer countFindLikeName(String username) {
+        return userMapper.countFindLikeName(username);
+    }
+
+    @Override
+    @Cacheable(cacheNames = "user")
     public int userCount() {
         return userMapper.userCount();
     }

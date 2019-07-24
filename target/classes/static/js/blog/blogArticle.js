@@ -18,7 +18,7 @@ layui.use('table', function(){
                 ,{field:'tags', title:'标签', align: 'center'}
                 ,{field:'type', title:'分类', align: 'center'}
                 ,{field:'createDate', title:'创建时间', align: 'center', sort: true}
-                ,{field:'username', title:'作者', align: 'center'}
+                ,{field:'author', title:'作者', align: 'center'}
 
                 ,{title:'操作', toolbar: '#articleBar', align: 'center'}
             ]

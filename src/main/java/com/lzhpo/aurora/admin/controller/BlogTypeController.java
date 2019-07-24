@@ -37,8 +37,6 @@ public class BlogTypeController {
     @Operation(value = "查询博客分类列表")
     public LayuiData blogTypeList(HttpServletRequest request){
         LayuiData layuiData = new LayuiData();
-        int count = blogTypeService.count();
-        layuiData.setCount(count);
         //前端
         int page = Integer.parseInt(request.getParameter("page"));
         int limit = Integer.parseInt(request.getParameter("limit"));
@@ -48,9 +46,11 @@ public class BlogTypeController {
         if (typeName == null || typeName == ""){
             List<BlogType> blogTypes = blogTypeService.selectByLimit(start, limit);
             layuiData.setData(blogTypes);
+            layuiData.setCount(blogTypeService.count());
         } else {
-            List<BlogType> blogTypes = blogTypeService.selectByLikeName(typeName);
+            List<BlogType> blogTypes = blogTypeService.selectByLikeName(typeName, start, limit);
             layuiData.setData(blogTypes);
+            layuiData.setCount(blogTypeService.countByLikeName(typeName));
         }
         return layuiData;
     }
