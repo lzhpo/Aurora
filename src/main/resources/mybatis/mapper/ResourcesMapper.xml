@@ -1,0 +1,172 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lzhpo.aurora.admin.mapper.ResourcesMapper">
+
+    <!-- 给一个角色增加权限 -->
+    <insert id="addRoleRes">
+        insert into role_resources(role_id, res_id) values(#{role_id}, #{res_id})
+    </insert>
+
+    <!-- 添加资源 -->
+    <insert id="addResources">
+        insert into sys_resources(resources_name, url, type, permission, id, pid)
+        values(
+            #{resources_name},
+            #{url},
+            #{type},
+            #{permission},
+            #{id},
+            #{pid}
+        )
+    </insert>
+
+    <!--  修改资源 -->
+    <update id="updateResources">
+        update sys_resources
+        set
+        resources_name = #{resources_name},
+        url = #{url},
+        type = #{type},
+        permission = #{permission},
+        id = #{id},
+        pid = #{pid}
+        where resources_id = #{resources_id}
+    </update>
+
+    <!-- 根据父节点的pid查询此条资源的节点id(DESC降序排列，取最后一条，加1)，然后在查询出来的此条资源的节点id的基础上+1，就是我们设置的id了。 -->
+    <select id="setNodeId" resultType="integer">
+        select id from sys_resources where pid = #{pid} order by id DESC limit 1
+    </select>
+
+    <!--删除单个-->
+    <delete id="resourcesDelOne">
+        DELETE
+        FROM
+            sys_resources
+        WHERE
+            resources_id = #{resources_id}
+    </delete>
+
+    <!--  批量删除资源，根据在MySQL中创建的函数getChildList，查询出节点的id(非主键id) -->
+    <delete id="batchDelNodeId">
+        DELETE
+        FROM
+            sys_resources
+        WHERE
+            id IN
+            <foreach collection="array" item="ids" open="(" close=")" separator=",">
+                #{ids}
+            </foreach>
+    </delete>
+
+    <!-- 根据主键resources_id批量删除 -->
+    <delete id="batchDelByResourcesId">
+        DELETE
+        FROM
+        sys_resources
+        WHERE
+        resources_id IN
+        <foreach collection="array" item="ResourcesIds" open="(" close=")" separator=",">
+            #{ResourcesIds}
+        </foreach>
+    </delete>
+
+    <!-- 查询全部 -->
+    <select id="resourcesFindAll" resultType="com.lzhpo.aurora.admin.entity.Resources">
+        SELECT
+            resources_id,
+            resources_name,
+            url,
+            type,
+            permission,
+            id,
+            pid
+        FROM
+            sys_resources
+    </select>
+
+    <!--根据资源名字模糊查询-->
+    <select id="resourcesFindLikeName" resultType="com.lzhpo.aurora.admin.entity.Resources">
+        SELECT
+            resources_id,
+            resources_name,
+            url,
+            type,
+            permission,
+            id,
+            pid
+        FROM
+            sys_resources
+        WHERE
+            resourecs_name LIKE concat(
+                '%',
+                #{resources_name},'%')
+    </select>
+
+    <!--统计条数-->
+    <select id="resourcesCount" resultType="java.lang.Integer">
+        SELECT
+            count(resources_id)
+        FROM
+            sys_resources
+    </select>
+
+    <!--查询权限树-->
+    <select id="resourcesTree" resultType="com.lzhpo.aurora.admin.entity.Resources">
+        SELECT
+            resources_id,
+            resources_name,
+            id,
+            pid
+        FROM
+            sys_resources
+    </select>
+
+    <!-- 根据叶子节点的id查询对应的resources的主键id  -->
+    <select id="findResIdByLeafId" resultType="java.lang.Integer">
+        select resources_id from sys_resources where id = #{id}
+    </select>
+
+    <!-- 根据角色id查询此角色拥有的所有的权限 -->
+    <select id="findPowerByRoleId" resultType="com.lzhpo.aurora.admin.entity.Resources">
+        SELECT
+            res.id
+        FROM
+            sys_role r
+        LEFT JOIN role_resources rp ON (rp.role_id = r.role_id)
+        LEFT JOIN sys_resources res ON (res.resources_id = rp.res_id)
+        WHERE
+            r.role_id = #{role_id}
+    </select>
+
+    <!--  根据在MySQL中创建的函数getChildList，调用getChildList函数，查询出节点的id(非主键id) -->
+    <select id="findNodeIdByFunc" resultType="java.lang.String">
+        SELECT getChildList(#{id})
+    </select>
+
+    <!--根据主键resources_id查询-->
+    <select id="findAllResByResId" resultType="com.lzhpo.aurora.admin.entity.Resources">
+        SELECT
+            resources_id,
+            resources_name,
+            url,
+            type,
+            permission,
+            id,
+            pid
+        FROM
+            sys_resources
+        WHERE resources_id = #{resources_id}
+    </select>
+
+    <!-- 根据id查询资源名称 -->
+    <select id="findResNameById" resultType="java.lang.String">
+        SELECT
+            resources_name
+        FROM
+            sys_resources
+        WHERE id = #{id}
+    </select>
+
+</mapper>

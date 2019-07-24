@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- layui -->
+    <link rel="stylesheet" th:href="@{/layui/css/layui.css}">
+    <!-- jQuery 2.2.3 -->
+    <script th:src="@{/AdminLTE/plugins/jQuery/jquery-2.2.3.min.js}"></script>
+    <!-- layui -->
+    <script th:src="@{/layui/layui.js}"></script>
+    <!-- resources -->
+    <script th:src="@{/js/system/resources.js}"></script>
+</head>
+<body>
+
+<div>
+    <form id="updateResFrom" th:each="Res : ${session.allResByResId}" style="margin: 20px;" class="layui-form layui-form-pane" lay-filter="editResFromFilter" action="">
+        <div class="layui-form-item" style="display: none">
+            <label class="layui-form-label">资源ID</label>
+            <div class="layui-input-block">
+                <input type="text" th:name="resources_id" th:value="${Res.resources_id}" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">资源名称</label>
+            <div class="layui-input-block">
+                <input type="text" th:name="resources_name" th:value="${Res.resources_name}" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">资源链接</label>
+            <div class="layui-input-block">
+                <input type="text" th:name="url" th:value="${Res.url}" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">类型</label>
+            <div class="layui-input-block">
+                <input type="text" th:name="type" th:value="${Res.type}" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">权限</label>
+            <div class="layui-input-block">
+                <input type="text" th:name="permission" th:value="${Res.permission}" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">id</label>
+            <div class="layui-input-block">
+                <select id="MyNodeId" th:name="id">
+                    <option th:if="${Res?.id}" th:value="${Res.id}" th:text="${Res.resources_name}" selected="selected"></option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">pid</label>
+            <div class="layui-input-block">
+                <select id="MyPid" th:name="pid">
+                    <option th:if="${Res?.pid}" th:value="${Res.id}" th:text="${session.resNameById}" selected="selected"></option>
+                </select>
+            </div>
+        </div>
+        <div style="margin-top: 30px;text-align: right;">
+            <button type="reset" class="layui-btn layui-btn-warm">重置</button>
+            <button class="layui-btn layui-btn-normal" lay-submit lay-filter="updateResSave">保存</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

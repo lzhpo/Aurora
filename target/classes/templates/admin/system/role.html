@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" th:href="@{/AdminLTE/bootstrap/css/bootstrap.min.css}">
+    <!-- jQuery 2.2.3 -->
+    <script th:src="@{/AdminLTE/plugins/jQuery/jquery-2.2.3.min.js}"></script>
+    <!-- Bootstrap 3.3.6 -->
+    <script th:src="@{/AdminLTE/bootstrap/js/bootstrap.min.js}"></script>
+    <!-- Theme style -->
+    <link rel="stylesheet" th:href="@{/AdminLTE/dist/css/AdminLTE.min.css}">
+    <!-- layui -->
+    <link rel="stylesheet" th:href="@{/layui/css/layui.css}">
+    <!-- layui -->
+    <script th:src="@{/layui/layui.js}"></script>
+    <!-- role -->
+    <script th:src="@{/js/system/role.js}"></script>
+</head>
+<body>
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        权限管理
+        <small>角色管理</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 主页</a></li>
+        <li class="active">权限管理</li>
+    </ol>
+</section>
+
+<div style="margin-top: 15px;">
+    <div style="margin-left: 10px;">
+        搜索角色描述：
+        <div class="layui-inline">
+            <input id="roleDescriptionReload" style="width: 300px;float: left" type="text" name="description" required lay-verify="required" autocomplete="off" class="layui-input">
+        </div>
+        <button data-type="reload" id="roleDescriptionSearch" style="margin-left: 8px" class="layui-btn layui-btn-normal">
+            <i class="layui-icon">&#xe615;</i> 搜索
+        </button>
+        <button onclick="window.location.reload();" class="layui-btn layui-btn-warm">
+            <i class="layui-icon">&#xe669;</i> 刷新
+        </button>
+    </div>
+    <table class="layui-hide" id="roleList" lay-filter="roleTable"></table>
+    <script type="text/html" id="roleToolbar">
+        <div class="layui-btn-container">
+            <button shiro:hasPermission="role:add" lay-event="roleAdd" class="layui-btn layui-btn-sm layui-btn-normal">
+                <i class="layui-icon">&#xe608;</i> 添加角色
+            </button>
+            <button shiro:hasPermission="role:delete" lay-event="roleBatchDel" class="layui-btn layui-btn-sm layui-btn-danger">
+                <i class="layui-icon">&#xe640;</i>批量删除
+            </button>
+        </div>
+    </script>
+    <script type="text/html" id="roleBar">
+        <a shiro:hasPermission="role:update" class="layui-btn layui-btn-xs layui-btn-normal" lay-event="edit">编辑</a>
+        <a shiro:hasPermission="role:delete" class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+        <a shiro:hasPermission="role:giveResources" class="layui-btn layui-btn-xs" lay-event="role_res" data-toggle="modal" data-target="#roleTreeModel">分配资源</a>
+    </script>
+</div>
+
+<!-- 权限树模态框start -->
+<!-- Modal -->
+<div class="modal fade" id="roleTreeModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">分配权限</h4>
+            </div>
+            <div class="modal-body">
+                <!--内容start-->
+                <form class="layui-form">
+                    <div class="layui-form-item">
+                        <label class="col-sm-2 control-label">选择权限</label>
+                        <div class="layui-input-block">
+                            <button type="button" class="layui-btn layui-btn-sm layui-btn-normal" onclick="showAll('#LAY-auth-tree-index')">全部展开</button>
+                            <button type="button" class="layui-btn layui-btn-sm layui-btn-normal" onclick="closeAll('#LAY-auth-tree-index')">全部隐藏</button>
+                            <button type="button" class="layui-btn layui-btn-sm layui-btn-danger" onclick="checkAll('#LAY-auth-tree-index')">全选</button>
+                            <button type="button" class="layui-btn layui-btn-sm layui-btn-danger" onclick="uncheckAll('#LAY-auth-tree-index')">全不选</button>
+                            <div id="LAY-auth-tree-index"></div>
+                        </div>
+                    </div>
+                </form>
+                <!--内容end-->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="layui-btn layui-btn-danger" data-dismiss="modal">关闭</button>
+                <button class="layui-btn layui-btn-warm" type="reset">重置</button>
+                <button class="layui-btn layui-btn-normal" type="submit" lay-submit lay-filter="LAY-auth-tree-submit">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--权限树模态框end-->
+
+</body>
+</html>

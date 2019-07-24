@@ -1,0 +1,22 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lzhpo.aurora.admin.mapper.UserResourcesMapper">
+
+    <!--查询用户权限-->
+    <select id="findByUserName" resultType="com.lzhpo.aurora.admin.entity.Resources">
+        SELECT
+            res.resources_id,
+            res.url,
+            res.resources_name,
+            res.permission
+        FROM
+            sys_role r
+        LEFT JOIN user_role ur ON (r.role_id = ur.role_id)
+        LEFT JOIN sys_user u ON (u.user_id = ur.user_id)
+        LEFT JOIN role_resources rp ON (rp.role_id = r.role_id)
+        LEFT JOIN sys_resources res ON (res.resources_id = rp.res_id)
+        WHERE
+            u.username = #{username}
+    </select>
+</mapper>

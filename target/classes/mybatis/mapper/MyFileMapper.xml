@@ -1,0 +1,89 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lzhpo.aurora.admin.mapper.MyFileMapper">
+
+    <insert id="saveFile">
+        INSERT INTO tool_myfile (
+            file_name,
+            file_path,
+            file_size
+        )
+        VALUES
+            (
+                #{file_name},
+                #{file_path},
+                #{file_size}
+            )
+    </insert>
+
+    <update id="updateFile">
+        update tool_myfile
+        set file_name = #{file_name}
+        where file_id = #{file_id}
+    </update>
+
+    <delete id="deleteOne">
+        DELETE FROM tool_myfile WHERE file_id = #{file_id}
+    </delete>
+
+    <delete id="batchDel">
+        DELETE FROM tool_myfile
+        WHERE file_id
+        IN
+        <foreach collection="array" item="ids" open="(" close=")" separator=",">
+            #{ids}
+        </foreach>
+    </delete>
+
+    <select id="findAllFile" resultType="com.lzhpo.aurora.admin.entity.MyFile">
+        SELECT
+            file_id,
+            file_name,
+            file_path,
+            file_size
+        FROM
+            tool_myfile
+    </select>
+
+    <select id="fileCount" resultType="java.lang.Integer">
+        SELECT
+            COUNT(file_id)
+        FROM
+            tool_myfile
+    </select>
+
+    <select id="findLikeName" resultType="com.lzhpo.aurora.admin.entity.MyFile">
+        SELECT
+            file_id,
+            file_name,
+            file_path,
+            file_size
+        FROM
+            tool_myfile
+        WHERE file_name LIKE concat('%',#{file_name},'%')
+    </select>
+
+    <select id="findFilePage" resultType="com.lzhpo.aurora.admin.entity.MyFile">
+        SELECT
+            file_id,
+            file_name,
+            file_path,
+            file_size
+        FROM
+            tool_myfile
+        LIMIT #{start},#{limit}
+    </select>
+
+    <select id="findFileLikeName" resultType="com.lzhpo.aurora.admin.entity.MyFile">
+        SELECT
+            file_id,
+            file_name,
+            file_path,
+            file_size
+        FROM
+            tool_myfile
+        where file_name like concat('%',#{file_name},'%')
+    </select>
+
+</mapper>

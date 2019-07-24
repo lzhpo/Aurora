@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lzhpo.aurora.admin.mapper.EmailMapper">
+
+    <resultMap id="BaseResultMap" type="com.lzhpo.aurora.admin.entity.Email">
+        <id column="email_id" jdbcType="INTEGER" property="emailId" />
+        <result column="send_date" jdbcType="TIMESTAMP" property="sendDate" />
+        <result column="username" jdbcType="VARCHAR" property="username" />
+        <result column="content" jdbcType="LONGVARCHAR" property="content" />
+    </resultMap>
+
+    <insert id="addEmail">
+        insert into tool_email(title,content,send_date,username)
+        values(
+            #{title},
+            #{content},
+            #{sendDate},
+            #{username}
+        )
+    </insert>
+
+    <delete id="delEmail">
+        delete from tool_email where email_id = #{emailId}
+    </delete>
+
+    <delete id="batchDelEmail">
+        delete from tool_email
+        where email_id
+        in
+        <foreach collection="array" item="emailIds" open="(" close=")" separator=",">
+            #{emailIds}
+        </foreach>
+    </delete>
+
+    <select id="findEmailByPage" resultMap="BaseResultMap">
+        select email_id, title, content, send_date, username
+        from tool_email
+        limit #{start},#{limit}
+    </select>
+
+    <select id="emailCount" resultType="java.lang.Integer">
+        select count(email_id) from tool_email
+    </select>
+
+    <select id="findEmailLikeContent" resultMap="BaseResultMap">
+        select email_id, title, content, send_date, username
+        from tool_email
+        where content like concat('%',#{content},'%')
+    </select>
+
+
+</mapper>

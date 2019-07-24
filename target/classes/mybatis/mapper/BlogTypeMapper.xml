@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lzhpo.aurora.admin.mapper.BlogTypeMapper">
+
+  <!-- 结果集映射 -->
+  <resultMap id="BaseResultMap" type="com.lzhpo.aurora.admin.entity.BlogType">
+    <id column="type_id" jdbcType="INTEGER" property="typeId" />
+    <result column="type_name" jdbcType="VARCHAR" property="typeName" />
+  </resultMap>
+
+  <delete id="delOne" parameterType="java.lang.Integer">
+    delete from blog_type
+    where type_id = #{typeId,jdbcType=INTEGER}
+  </delete>
+
+  <delete id="batchDel">
+    delete from blog_type
+    where type_id
+    in
+    <foreach collection="array" item="ids" open="(" separator="," close=")">
+      #{ids}
+    </foreach>
+  </delete>
+
+  <insert id="addType">
+    insert into blog_type(type_name) values(#{typeName})
+  </insert>
+
+  <update id="update" parameterType="com.lzhpo.aurora.admin.entity.BlogType">
+    update blog_type
+    set type_name = #{typeName,jdbcType=VARCHAR}
+    where type_id = #{typeId,jdbcType=INTEGER}
+  </update>
+
+  <select id="selectAll" resultMap="BaseResultMap">
+    select type_id, type_name
+    from blog_type
+  </select>
+
+  <!-- 分页查询 -->
+  <select id="selectByLimit" resultMap="BaseResultMap">
+    select type_id, type_name
+    from blog_type
+    limit #{start},#{limit}
+  </select>
+
+  <!-- 模糊查询 -->
+  <select id="selectByLikeName" resultMap="BaseResultMap">
+    select type_id, type_name
+    from blog_type
+    where type_name like concat('%',#{tpyeName},'%')
+  </select>
+
+  <!-- 统计所有条数 -->
+  <select id="count" resultType="java.lang.Integer">
+    select count(type_id) from blog_type
+  </select>
+</mapper>

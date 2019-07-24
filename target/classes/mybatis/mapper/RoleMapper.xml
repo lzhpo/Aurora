@@ -1,0 +1,54 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lzhpo.aurora.admin.mapper.RoleMapper">
+
+    <!-- 添加 -->
+    <insert id="addRole">
+        insert into sys_role(role_name,description) values(#{role_name},#{description})
+    </insert>
+
+    <!-- 编辑 -->
+    <update id="editRole">
+        update sys_role
+        set role_name = #{role_name}, description = #{description}
+        where role_id = #{role_id}
+    </update>
+
+    <!-- 批量删除 -->
+    <delete id="batchDel">
+        delete from sys_role
+        where role_id
+        in
+        <foreach collection="array" item="ids" open="(" close=")" separator=",">
+            #{ids}
+        </foreach>
+    </delete>
+
+    <!--单个删除 -->
+    <delete id="deleteOne">
+        delete from sys_role
+        where role_id = #{role_id}
+    </delete>
+
+    <!--查询全部-->
+    <select id="roleFindAll" resultType="com.lzhpo.aurora.admin.entity.Role">
+        select role_id,role_name,description from sys_role limit #{start},#{limit}
+    </select>
+
+    <!--根据description模糊查询-->
+    <select id="roleLikeDesc" resultType="com.lzhpo.aurora.admin.entity.Role">
+        select role_id,role_name,description from sys_role where description like concat('%',#{description},'%')
+    </select>
+
+    <!--统计条数-->
+    <select id="roleCount" resultType="int">
+        select count(role_id) from sys_role
+    </select>
+
+    <!-- 查询所有角色 -->
+    <select id="findAllRole" resultType="com.lzhpo.aurora.admin.entity.Role">
+        select role_id, role_name, description from sys_role
+    </select>
+
+</mapper>

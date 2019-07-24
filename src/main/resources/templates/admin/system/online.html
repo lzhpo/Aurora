@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>在线用户管理</title>
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" th:href="@{/AdminLTE/bootstrap/css/bootstrap.min.css}">
+    <!-- jQuery 2.2.3 -->
+    <script th:src="@{/AdminLTE/plugins/jQuery/jquery-2.2.3.min.js}"></script>
+    <!-- Bootstrap 3.3.6 -->
+    <script th:src="@{/AdminLTE/bootstrap/js/bootstrap.min.js}"></script>
+    <!-- Theme style -->
+    <link rel="stylesheet" th:href="@{/AdminLTE/dist/css/AdminLTE.min.css}">
+    <!-- layui -->
+    <link rel="stylesheet" th:href="@{/layui/css/layui.css}">
+    <!-- layui -->
+    <script th:src="@{/layui/layui.js}"></script>
+    <!-- dateFormat --->
+    <script th:src="@{/lib/onlineUser/dateFormat.js}"></script>
+    <!-- online -->
+    <script th:src="@{/js/system/online.js}"></script>
+</head>
+<body>
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        权限管理
+        <small>在线用户</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 主页</a></li>
+        <li class="active">权限管理</li>
+    </ol>
+</section>
+
+<div style="margin-top: 15px;">
+    <blockquote class="layui-elem-quote">当前在线用户数：<span id="onlineCount"></span></blockquote>
+    <table class="layui-table">
+        <thead>
+        <tr>
+            <th>序号</th>
+            <th>用户名称</th>
+            <th>登录时间</th>
+            <th>最后访问时间</th>
+            <th>主机</th>
+            <th>状态</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+    </table>
+</div>
+
+</body>
+</html>

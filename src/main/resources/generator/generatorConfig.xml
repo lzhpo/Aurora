@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC
+        "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <!-- 指定数据库驱动的jdbc驱动jar包的位置 -->
+    <!-- 不再需要，因为 jar 包已经在 classpath 中
+    <classPathEntry location="./mysql-connector-java-5.1.47.jar" />
+    -->
+
+    <context id="mysql" defaultModelType="hierarchical" targetRuntime="MyBatis3Simple" >
+        <!-- 生成的 Java 文件的编码 -->
+        <property name="javaFileEncoding" value="UTF-8"/>
+        <!-- 格式化 Java 代码 -->
+        <property name="javaFormatter" value="org.mybatis.generator.api.dom.DefaultJavaFormatter"/>
+        <!-- 格式化 XML 代码 -->
+        <property name="xmlFormatter" value="org.mybatis.generator.api.dom.DefaultXmlFormatter"/>
+
+        <!-- 自定义注释生成器 -->
+        <commentGenerator type="com.lzhpo.aurora.admin.customMyGenerator.MySQLCommentGenerator">
+            <property name="author" value="lzhpo"/>
+            <property name="dateFormat" value="yyyy/MM/dd"/>
+        </commentGenerator>
+
+        <!-- 配置数据库连接 -->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/aurora?useUnicode=true&amp;useSSL=false&amp;characterEncoding=utf8&amp;serverTimezone=GMT%2B8"
+                        userId="root"
+                        password="123456">
+            <!-- 设置 useInformationSchema 属性为 true，JDBC 连接 MySQL 的时候需要添加什么属性才能获取表的注释。 -->
+            <property name="useInformationSchema" value="true" />
+        </jdbcConnection>
+
+        <!-- 生成实体的位置 -->
+        <javaModelGenerator targetPackage="com.lzhpo.aurora.admin.entity" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaModelGenerator>
+
+        <!-- 生成 Mapper映射文件(Mapper.xml) 的位置，和下面的Mapper接口位置不能调换 -->
+        <sqlMapGenerator targetPackage="mybatis.mapper" targetProject="src/main/resources">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+
+        <!-- 生成 Mapper接口类 的位置 -->
+        <javaClientGenerator targetPackage="com.lzhpo.aurora.admin.mapper" type="XMLMAPPER" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+
+        <!-- 设置数据库的表名和实体类名 -->
+        <table tableName="tool_email" domainObjectName="Email">
+            <!-- generatedKey用于生成生成主键的方法 -->
+            <generatedKey column="id" sqlStatement="SELECT LAST_INSERT_ID()"/>
+        </table>
+
+    </context>
+
+</generatorConfiguration>

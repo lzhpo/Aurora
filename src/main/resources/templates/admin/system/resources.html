@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Title</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" th:href="@{/AdminLTE/bootstrap/css/bootstrap.min.css}">
+    <!-- jQuery 2.2.3 -->
+    <script th:src="@{/AdminLTE/plugins/jQuery/jquery-2.2.3.min.js}"></script>
+    <!-- Bootstrap 3.3.6 -->
+    <script th:src="@{/AdminLTE/bootstrap/js/bootstrap.min.js}"></script>
+    <!-- Theme style -->
+    <link rel="stylesheet" th:href="@{/AdminLTE/dist/css/AdminLTE.min.css}">
+    <!--treetable-->
+    <link rel="stylesheet" th:href="@{/design/css/layui.css}" media="all">
+    <!--treetable-->
+    <script th:src="@{/design/layui.js}"></script>
+    <!-- resources -->
+    <script th:src="@{/js/system/resources.js}"></script>
+</head>
+<body>
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        权限管理
+        <small>资源管理</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 主页</a></li>
+        <li class="active">权限管理</li>
+    </ol>
+</section>
+
+<div style="margin-top: 10px;">
+    <div class="layui-card">
+        <div class="layui-card-header">
+            <!--
+            <a class="layui-btn layui-btn-primary layui-btn-xs layui-btn-xstree"  onclick="window.location.href='/admin/system/resources';">刷新</a>
+            <a class="layui-btn layui-btn-primary layui-btn-xs layui-btn-xstree"  onclick="reload()">reload</a>
+            <a class="layui-btn layui-btn-primary layui-btn-xs layui-btn-xstree"  onclick="query()">query</a>
+            <a class="layui-btn layui-btn-primary layui-btn-xs layui-btn-xstree"  onclick="add(null);">新增一行</a>
+            <a class="layui-btn layui-btn-primary layui-btn-xs layui-btn-xstree"  onclick="openorclose();">隐藏或打开香蕉节点</a>
+            <a class="layui-btn layui-btn-primary layui-btn-xs layui-btn-xstree"  onclick="getCheckData();">获取选中行数据</a>
+            <a class="layui-btn layui-btn-primary layui-btn-xs layui-btn-xstree"  onclick="getCheckLength();">获取选中数目</a>
+            <a class="layui-btn layui-btn-primary layui-btn-xs layui-btn-xstree"  onclick="print();">打印缓存对象</a>
+            <a class="layui-btn layui-btn-primary layui-btn-xs layui-btn-xstree"  onclick="openAll();">展开或折叠全部</a>
+            <a class="layui-btn layui-btn-primary layui-btn-xs layui-btn-xstree"  onclick="radioStatus();">获取单选数据</a>
+            <a class="layui-btn layui-btn-primary layui-btn-xs layui-btn-xstree"  onclick="test();">test</a>
+            -->
+
+            <div class="layui-btn-container">
+                <button shiro:hasPermission="resources:add" class="layui-btn layui-btn-sm layui-btn-normal" data-toggle="modal" data-target="#addResourcesModal">
+                    添加资源
+                </button>
+                <button shiro:hasPermission="resources:delete" class="layui-btn layui-btn-sm layui-btn-danger" onclick="batchDelByResourcesId()">
+                    批量删除
+                </button>
+                <button onclick="window.location.reload();" class="layui-btn layui-btn-sm layui-btn-warm">
+                    刷新页面
+                </button>
+                <button onclick="openAll();" class="layui-btn layui-btn-sm layui-btn-normal">
+                    折叠/展开
+                </button>
+            </div>
+
+        </div>
+        <div>
+            <table class="layui-hidden" id="treeTable" lay-filter="treeTable"></table>
+            <script type="text/html" id="resourcesBar">
+                <a shiro:hasPermission="resources:update" class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+                <a shiro:hasPermission="resources:delete" class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+            </script>
+        </div>
+    </div>
+</div>
+
+<!-- 添加资源的模态框start -->
+<div class="modal fade" id="addResourcesModal" tabindex="-1" role="dialog" aria-labelledby="addResourcesModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <!--模态框头部-->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="addResourcesModalLabel">添加资源</h4>
+            </div>
+            <!--模态框主主体内容-->
+            <div class="modal-body">
+                <form class="layui-form layui-form-pane" action="" id="addResources">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">资源名称</label>
+                        <div class="layui-input-block">
+                            <input type="text" th:name="resources_name" lay-verify="resources_nameVerify" required placeholder="请输入资源名称..." autocomplete="off" class="layui-input">
+                        </div>
+                        <!--<div class="layui-form-mid layui-word-aux">辅助文字</div>-->
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">资源链接</label>
+                        <div class="layui-input-block">
+                            <input type="text" th:name="url" lay-verify="urlVerify" required placeholder="请输入资源链接..." autocomplete="off" class="layui-input">
+                        </div>
+                        <!--<div class="layui-form-mid layui-word-aux">辅助文字</div>-->
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">类型</label>
+                        <div class="layui-input-block">
+                            <input type="text" th:name="type" lay-verify="typeVerify" required placeholder="请输入类型..." autocomplete="off" class="layui-input">
+                        </div>
+                        <!--<div class="layui-form-mid layui-word-aux">辅助文字</div>-->
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">权限</label>
+                        <div class="layui-input-block">
+                            <input type="text" th:name="permission" lay-verify="permissionVerify" required placeholder="请输入权限..." autocomplete="off" class="layui-input">
+                        </div>
+                        <!--<div class="layui-form-mid layui-word-aux">辅助文字</div>-->
+                    </div>
+<!--                    <div class="layui-form-item">-->
+<!--                        <label class="layui-form-label">id</label>-->
+<!--                        <div class="layui-input-block">-->
+<!--                            <input type="text" name="id" lay-verify="idVerify" required placeholder="请输入id..." autocomplete="off" class="layui-input">-->
+<!--                        </div>-->
+<!--                        <div class="layui-form-mid layui-word-aux">节点的id，非主键id</div>-->
+<!--                    </div>-->
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">pid</label>
+                        <div class="layui-input-block">
+                            <select th:name="pid" xm-select="select1" lay-verify="required">
+                                <option value="">---请选择父节点---</option>
+                                <option th:each="Res : ${resourcesFindAll}" th:text="${Res.resources_name}" th:value="${Res.id}"></option>
+                            </select>
+                        </div>
+                        <div class="layui-form-mid layui-word-aux">父节点id</div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="layui-btn layui-btn-danger" data-dismiss="modal">关闭</button>
+                        <button type="reset" class="layui-btn layui-btn-warm">重置</button>
+                        <button class="layui-btn layui-btn-normal" lay-submit lay-filter="addFormSave">保存</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 添加资源的模态框end -->
+
+</body>
+</html>

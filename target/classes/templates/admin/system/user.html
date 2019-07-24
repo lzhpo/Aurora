@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" th:href="@{/AdminLTE/bootstrap/css/bootstrap.min.css}">
+    <!-- jQuery 2.2.3 -->
+    <script th:src="@{/AdminLTE/plugins/jQuery/jquery-2.2.3.min.js}"></script>
+    <!-- Bootstrap 3.3.6 -->
+    <script th:src="@{/AdminLTE/bootstrap/js/bootstrap.min.js}"></script>
+    <!-- Theme style -->
+    <link rel="stylesheet" th:href="@{/AdminLTE/dist/css/AdminLTE.min.css}">
+    <!-- layui -->
+    <link rel="stylesheet" th:href="@{/layui/css/layui.css}">
+    <!-- layui -->
+    <script th:src="@{/layui/layui.js}"></script>
+    <!-- user -->
+    <script th:src="@{/js/system/user.js}"></script>
+</head>
+<body>
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        权限管理
+        <small>用户管理</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 主页</a></li>
+        <li class="active">权限管理</li>
+    </ol>
+</section>
+
+<div style="margin-top: 15px;">
+    <div style="margin-left: 10px;">
+        搜索用户名称：
+        <div class="layui-inline">
+            <input id="userSearch" style="width: 300px;float: left" type="text" name="username" required lay-verify="required" autocomplete="off" class="layui-input">
+        </div>
+        <button data-type="reload" id="sousuo" style="margin-left: 8px" class="layui-btn layui-btn-normal">
+            <i class="layui-icon">&#xe615;</i> 搜索
+        </button>
+        <button onclick="window.location.reload();" class="layui-btn layui-btn-warm">
+            <i class="layui-icon">&#xe669;</i> 刷新
+        </button>
+    </div>
+    <table class="layui-hide" id="userList" lay-filter="userTable"></table>
+    <script type="text/html" id="userToolbar">
+        <div class="layui-btn-container">
+            <button shiro:hasPermission="user:add" class="layui-btn layui-btn-sm layui-btn-normal" lay-event="userAdd">
+                <i class="layui-icon">&#xe608;</i> 添加用户
+            </button>
+            <button shiro:hasPermission="user:delete" class="layui-btn layui-btn-sm layui-btn-danger" lay-event="batchDel">
+                <i class="layui-icon">&#xe640;</i> 批量删除
+            </button>
+        </div>
+    </script>
+    <script type="text/html" id="userBar">
+        <a shiro:hasPermission="user:update" class="layui-btn layui-btn-normal layui-btn-xs" lay-event="edit">编辑</a>
+        <a shiro:hasPermission="user:delete" class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+        <a shiro:hasPermission="user:giveRole" class="layui-btn layui-btn-xs" lay-event="userRole" data-toggle="modal" data-target="#roleSelectModel">分配角色</a>
+    </script>
+
+    <!--男女-->
+    <script type="text/html" id="switchTpl">
+        <input type="checkbox" name="sex" value="{{d.sex}}" lay-skin="switch" lay-text="女|男" lay-filter="sexDemo" {{ d.sex == 0 ? 'checked' : '' }}>
+<!--        <span class="layui-badge layui-bg-black">-->
+<!--            {{#  if(d.sex === 0){ }}-->
+<!--                女-->
+<!--            {{#  } else { }}-->
+<!--                男-->
+<!--            {{#  } }}-->
+<!--        </span>-->
+    </script>
+    <!--是否锁定-->
+    <script type="text/html" id="checkboxTpl">
+        <input type="checkbox" name="status" value="{{d.status}}" title="锁定" lay-filter="lockDemo" {{ d.status == 0 ? 'checked' : '' }}>
+
+<!--        <span class="layui-badge">-->
+<!--            {{#  if(d.status === 0){ }}-->
+<!--                锁定-->
+<!--            {{#  } else { }}-->
+<!--                正常-->
+<!--            {{#  } }}-->
+<!--        </span>-->
+    </script>
+</div>
+
+<!-- 分配角色模态框start -->
+<!-- Modal -->
+<div class="modal fade" id="roleSelectModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">分配角色</h4>
+            </div>
+            <div class="modal-body">
+                <!--内容start-->
+                <form class="layui-form layui-form-pane" lay-filter="userRoleFrom" action="">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">分配角色</label>
+                        <div class="layui-input-block">
+                            <select id="userRoleHtml" name="role_id" lay-filter="userRoleFilter" lay-verify="required">
+
+                            </select>
+                        </div>
+                    </div>
+                </form>
+                <!--内容end-->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="layui-btn layui-btn-danger" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--分配角色模态框end-->
+
+</body>
+</html>

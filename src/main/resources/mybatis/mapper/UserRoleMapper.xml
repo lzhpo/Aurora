@@ -1,0 +1,38 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lzhpo.aurora.admin.mapper.UserRoleMapper">
+
+    <!-- 给用户赋予角色 -->
+    <insert id="addUserRole">
+        insert into user_role(user_id, role_id) values(#{user_id}, #{role_id})
+    </insert>
+
+    <!-- 修改用户的角色 -->
+    <update id="updateUserRole">
+        update user_role set
+        user_id = #{user_id}, role_id = #{role_id}
+        where user_id = #{user_id}
+    </update>
+
+    <!--查询用户角色-->
+    <select id="findByUserName" resultType="com.lzhpo.aurora.admin.entity.Role">
+        SELECT
+            r.role_id,
+            r.role_name,
+            r.description
+        FROM
+            sys_role r
+        LEFT JOIN user_role ur ON (r.role_id = ur.role_id)
+        LEFT JOIN sys_user u ON (u.user_id = ur.user_id)
+        WHERE
+            u.username = #{username}
+    </select>
+
+    <!-- 根据用户id查询角色id -->
+    <select id="findRoleIdByUserId" resultType="java.lang.Integer">
+        select role_id from user_role where user_id = #{user_id}
+    </select>
+
+
+</mapper>

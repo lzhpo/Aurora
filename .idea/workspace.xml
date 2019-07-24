@@ -1,0 +1,1179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/ResourcesMapper.xml" line="25" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0bf1808c-7665-48e5-82ac-ceffe536cc3a" name="默认更改列表" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="209" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Aurora" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="JavaScript File" />
+        <option value="MybatisMapper" />
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>edit</find>
+      <find>role_id</find>
+      <find>checkedId</find>
+      <find>/role/power/add</find>
+      <find>powerByRoleId</find>
+      <find>legetLeafaf</find>
+      <find>delete</find>
+      <find>findByUserName</find>
+      <find>sexDemo</find>
+      <find>del</find>
+      <find>onClickRow</find>
+      <find>formSelects</find>
+      <find>form.val</find>
+      <find>resources_id</find>
+      <find>selectId-tag</find>
+      <find>test</find>
+      <find>toolbarDemo</find>
+      <find>barDemo</find>
+      <find>updatelog</find>
+      <find>dllogTable</find>
+      <find>rightBar</find>
+      <find>toolBar</find>
+      <find>roleTable</find>
+      <find>flushTable</find>
+      <find>已验证用户免登录</find>
+      <find>AuthenticationException</find>
+      <find>计算机</find>
+      <find>getPageSize</find>
+      <find>username</find>
+      <find>error</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>E:\MyProject\Aurora\src</dir>
+      <dir>E:\MyProject\Aurora\src\main</dir>
+      <dir>E:\MyProject\Aurora\src\main\resources\static\login</dir>
+      <dir>E:\MyProject\Aurora\src\main\resources\static\AdminLTE</dir>
+      <dir>E:\MyProject\Aurora\src\main\resources\static\lib\bootstrap-select-1.13.0-dev</dir>
+      <dir>E:\MyProject\Aurora\src\main\resources\static\lib\bootstrap-select-1.13.0-dev\dist</dir>
+      <dir>E:\MyProject\Aurora\src\main\resources</dir>
+      <dir>E:\MyProject\Aurora\src\main\java\com\lzhpo\aurora\admin\controller</dir>
+      <dir>E:\MyProject\Aurora\src\main\resources\static\design</dir>
+      <dir>E:\MyProject\Aurora\src\main\resources\templates</dir>
+      <dir>E:\MyProject\Aurora\src\main\resources\static</dir>
+      <dir>E:\MyProject\Aurora</dir>
+      <dir>E:\MyProject\Aurora\src\main\java</dir>
+      <dir>E:\MyProject\Aurora\src\main\java\com\lzhpo\aurora</dir>
+    </dirStrings>
+  </component>
+  <component name="GOROOT" path="D:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/EmailServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/UpdateLogServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/MyFileServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/OnlineServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/ResourcesServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/RoleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/tool/myfile.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/tool/myfile.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/DownLoadLogServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/config/RedisConfig.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/LogMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/LogService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/LogServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/util/IDIncrease.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/LogMapper.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/lzhpo/aurora/AuroraApplicationTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/aspect/LogAspect.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/generator/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/es/service/LogRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/es/service/impl/LogService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/es/service/LogService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/es/service/impl/LogServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/tool/updatelog.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/es/service/ESLogService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/es/service/impl/ESLogServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/tool/log.js" />
+        <option value="$PROJECT_DIR$/src/test/java/com/lzhpo/aurora/es/TestLog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/es/repository/LogRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-druid.yml" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/blog/blogArticle.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/es/repository/BlogArticleRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/es/service/ESBlogArticleService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/es/service/impl/ESBlogArticleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/LogController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/entity/BlogArticle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/entity/Log.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/blog/addBlog.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/blog/addBlog.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/BlogArticleMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/BlogArticleService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/BlogArticleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/BlogArticleController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/BlogArticleMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/BlogTagMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/BlogTagMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/BlogTagService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/BlogTagServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/BlogTagController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\Maven\apache-maven-3.6.0\repository" />
+        <option name="userSettingsFile" value="E:\Maven\apache-maven-3.6.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="jdkForImporter" value="#JAVA_HOME" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="#JAVA_HOME" />
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="40" />
+    <option name="y" value="22" />
+    <option name="width" value="1175" />
+    <option name="height" value="1005" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="添加" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Aurora" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Aurora" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="aurora" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\MyProject\Aurora\src\main\resources\static\lib\onlineUser" />
+      <recent name="E:\MyProject\Aurora\src\main\resources\static\lib" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\MyProject\Aurora" />
+      <recent name="E:\MyProject\Aurora\src\main\resources\static\design" />
+      <recent name="E:\MyProject\Aurora\src\main\resources\static\lib\layui-from-selects" />
+      <recent name="E:\MyProject\Aurora\src\main\resources" />
+      <recent name="E:\MyProject\Aurora\src\main\resources\static\images" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lzhpo.aurora.admin.service" />
+      <recent name="com.lzhpo.aurora.admin.config" />
+      <recent name="com.lzhpo.aurora.admin.aspect" />
+      <recent name="com.lzhpo.aurora.admin.annotation" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.lzhpo.aurora.admin.entity" />
+      <recent name="com.lzhpo.aurora.admin.shiro" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AuroraApplication">
+    <configuration name="TestLog.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Aurora" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lzhpo.aurora.es.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lzhpo.aurora.es" />
+      <option name="MAIN_CLASS_NAME" value="com.lzhpo.aurora.es.TestLog" />
+      <option name="METHOD_NAME" value="findAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestLog.findByOperation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Aurora" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lzhpo.aurora.es.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lzhpo.aurora.es" />
+      <option name="MAIN_CLASS_NAME" value="com.lzhpo.aurora.es.TestLog" />
+      <option name="METHOD_NAME" value="findByOperation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestLog.findByOperation2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Aurora" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lzhpo.aurora.es.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lzhpo.aurora.es" />
+      <option name="MAIN_CLASS_NAME" value="com.lzhpo.aurora.es.TestLog" />
+      <option name="METHOD_NAME" value="findByOperation2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestLog.selectMySQLAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Aurora" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lzhpo.aurora.es.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lzhpo.aurora.es" />
+      <option name="MAIN_CLASS_NAME" value="com.lzhpo.aurora.es.TestLog" />
+      <option name="METHOD_NAME" value="selectMySQLAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestLog.selectOperationByPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Aurora" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lzhpo.aurora.es.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lzhpo.aurora.es" />
+      <option name="MAIN_CLASS_NAME" value="com.lzhpo.aurora.es.TestLog" />
+      <option name="METHOD_NAME" value="selectOperationByPage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuroraApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Aurora" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lzhpo.aurora.AuroraApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestLog.findAll" />
+        <item itemvalue="JUnit.TestLog.findByOperation2" />
+        <item itemvalue="JUnit.TestLog.findByOperation" />
+        <item itemvalue="JUnit.TestLog.selectOperationByPage" />
+        <item itemvalue="JUnit.TestLog.selectMySQLAll" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\lzhpo\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0bf1808c-7665-48e5-82ac-ceffe536cc3a" name="默认更改列表" comment="" />
+      <created>1559842792938</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559842792938</updated>
+      <workItem from="1559842794219" duration="2791000" />
+      <workItem from="1560095793742" duration="311000" />
+      <workItem from="1560126909852" duration="2453000" />
+      <workItem from="1560129676099" duration="17606000" />
+      <workItem from="1560150308287" duration="12186000" />
+      <workItem from="1560164993468" duration="10442000" />
+      <workItem from="1560177248173" duration="10541000" />
+      <workItem from="1560216174677" duration="19815000" />
+      <workItem from="1560245204973" duration="27258000" />
+      <workItem from="1560274490199" duration="3257000" />
+      <workItem from="1560306115578" duration="10736000" />
+      <workItem from="1560319251098" duration="12070000" />
+      <workItem from="1560346161131" duration="19639000" />
+      <workItem from="1560366205170" duration="12000" />
+      <workItem from="1560366384037" duration="7084000" />
+      <workItem from="1560392236936" duration="13134000" />
+      <workItem from="1560410207568" duration="10619000" />
+      <workItem from="1560424656827" duration="21653000" />
+      <workItem from="1560449033659" duration="194000" />
+      <workItem from="1560454167089" duration="1476000" />
+      <workItem from="1560479744168" duration="13583000" />
+      <workItem from="1560495096980" duration="2801000" />
+      <workItem from="1560497992045" duration="846000" />
+      <workItem from="1560498903647" duration="2379000" />
+      <workItem from="1560501342516" duration="4589000" />
+      <workItem from="1560508902625" duration="22614000" />
+      <workItem from="1560566889318" duration="3815000" />
+      <workItem from="1560571514725" duration="17058000" />
+      <workItem from="1560590136223" duration="91000" />
+      <workItem from="1560606932509" duration="11000" />
+      <workItem from="1560611621764" duration="10585000" />
+      <workItem from="1560652542602" duration="279000" />
+      <workItem from="1560652838976" duration="156000" />
+      <workItem from="1560653015077" duration="240000" />
+      <workItem from="1560653276818" duration="190000" />
+      <workItem from="1560653487437" duration="86000" />
+      <workItem from="1560653592824" duration="1885000" />
+      <workItem from="1560656893796" duration="24000" />
+      <workItem from="1560657234590" duration="21470000" />
+      <workItem from="1560685947743" duration="12186000" />
+      <workItem from="1560698340163" duration="6440000" />
+      <workItem from="1560738236327" duration="17447000" />
+      <workItem from="1560762425584" duration="9266000" />
+      <workItem from="1560778220365" duration="19371000" />
+      <workItem from="1560797680518" duration="3979000" />
+      <workItem from="1560825100259" duration="19751000" />
+      <workItem from="1560854169874" duration="684000" />
+      <workItem from="1560854985816" duration="75000" />
+      <workItem from="1560855078969" duration="61000" />
+      <workItem from="1560855158226" duration="100000" />
+      <workItem from="1560855277474" duration="72000" />
+      <workItem from="1560855368818" duration="75000" />
+      <workItem from="1560855464034" duration="53000" />
+      <workItem from="1560855537745" duration="53000" />
+      <workItem from="1560855609191" duration="57000" />
+      <workItem from="1560855686332" duration="57000" />
+      <workItem from="1560855766738" duration="78000" />
+      <workItem from="1560855865628" duration="113000" />
+      <workItem from="1560855998163" duration="43000" />
+      <workItem from="1560856066749" duration="147000" />
+      <workItem from="1560856233484" duration="119000" />
+      <workItem from="1560856376014" duration="123000" />
+      <workItem from="1560856523990" duration="144000" />
+      <workItem from="1560856690873" duration="64000" />
+      <workItem from="1560856777853" duration="147000" />
+      <workItem from="1560856946125" duration="243000" />
+      <workItem from="1560857209678" duration="573000" />
+      <workItem from="1560857797028" duration="204000" />
+      <workItem from="1560859847165" duration="120000" />
+      <workItem from="1560859992562" duration="12225000" />
+      <workItem from="1560872409320" duration="2434000" />
+      <workItem from="1560875057912" duration="8229000" />
+      <workItem from="1560883817181" duration="704000" />
+      <workItem from="1560910625970" duration="5743000" />
+      <workItem from="1560916438806" duration="97000" />
+      <workItem from="1560916555449" duration="88000" />
+      <workItem from="1560916663233" duration="72000" />
+      <workItem from="1560916754037" duration="889000" />
+      <workItem from="1560917666435" duration="91000" />
+      <workItem from="1560917777719" duration="161000" />
+      <workItem from="1560917959830" duration="138000" />
+      <workItem from="1560918121045" duration="197000" />
+      <workItem from="1560918338704" duration="249000" />
+      <workItem from="1560918607561" duration="1015000" />
+      <workItem from="1560923951610" duration="9294000" />
+      <workItem from="1560942841284" duration="1344000" />
+      <workItem from="1560945666588" duration="9663000" />
+      <workItem from="1560961150351" duration="184000" />
+      <workItem from="1560961355903" duration="109000" />
+      <workItem from="1560961484392" duration="2173000" />
+      <workItem from="1560963691252" duration="241000" />
+      <workItem from="1560995723373" duration="10201000" />
+      <workItem from="1561022131378" duration="5030000" />
+      <workItem from="1561033699835" duration="5885000" />
+      <workItem from="1561092988543" duration="761000" />
+      <workItem from="1561094152528" duration="3985000" />
+      <workItem from="1561099054768" duration="1060000" />
+      <workItem from="1561100910519" duration="32000" />
+      <workItem from="1561136936595" duration="438000" />
+      <workItem from="1561137433272" duration="57000" />
+      <workItem from="1561167560405" duration="20000" />
+      <workItem from="1561183900552" duration="13000" />
+      <workItem from="1561192833533" duration="19000" />
+      <workItem from="1561195992045" duration="225000" />
+      <workItem from="1561218107483" duration="971000" />
+      <workItem from="1561221297991" duration="3171000" />
+      <workItem from="1561224723647" duration="671000" />
+      <workItem from="1561228123445" duration="3144000" />
+      <workItem from="1561236854247" duration="214000" />
+      <workItem from="1561237158739" duration="317000" />
+      <workItem from="1561266119692" duration="6424000" />
+      <workItem from="1561272639273" duration="37000" />
+      <workItem from="1561293184051" duration="189000" />
+      <workItem from="1561294285240" duration="302000" />
+      <workItem from="1561300022871" duration="325000" />
+      <workItem from="1561301645854" duration="187000" />
+      <workItem from="1561304403628" duration="269000" />
+      <workItem from="1561356813649" duration="4034000" />
+      <workItem from="1561426472601" duration="597000" />
+      <workItem from="1561427635557" duration="599000" />
+      <workItem from="1561443627781" duration="137000" />
+      <workItem from="1561443840529" duration="440000" />
+      <workItem from="1561444805727" duration="3964000" />
+      <workItem from="1561466167400" duration="6363000" />
+      <workItem from="1561481691083" duration="7617000" />
+      <workItem from="1561624781099" duration="451000" />
+      <workItem from="1561635617473" duration="6869000" />
+      <workItem from="1561780622672" duration="469000" />
+      <workItem from="1561870210606" duration="1538000" />
+      <workItem from="1562197263600" duration="2181000" />
+      <workItem from="1562207073946" duration="949000" />
+      <workItem from="1562208759316" duration="8000" />
+      <workItem from="1562209557617" duration="708000" />
+      <workItem from="1562210595688" duration="1962000" />
+      <workItem from="1562214811773" duration="114000" />
+      <workItem from="1562215024040" duration="97000" />
+      <workItem from="1562215160980" duration="12000" />
+      <workItem from="1562301653504" duration="427000" />
+      <workItem from="1562302102649" duration="4570000" />
+      <workItem from="1562315920449" duration="1021000" />
+      <workItem from="1562340778761" duration="600000" />
+      <workItem from="1562343399843" duration="6468000" />
+      <workItem from="1562374415623" duration="23709000" />
+      <workItem from="1562420457968" duration="200000" />
+      <workItem from="1562516257251" duration="559000" />
+      <workItem from="1562595520368" duration="63000" />
+      <workItem from="1562690604467" duration="620000" />
+      <workItem from="1562691663739" duration="156000" />
+      <workItem from="1562767089586" duration="19255000" />
+      <workItem from="1562814386817" duration="1019000" />
+      <workItem from="1562815427130" duration="191000" />
+      <workItem from="1562815640111" duration="834000" />
+      <workItem from="1562816495119" duration="55000" />
+      <workItem from="1562816573630" duration="760000" />
+      <workItem from="1562822406937" duration="533000" />
+      <workItem from="1562822971254" duration="583000" />
+      <workItem from="1562823578364" duration="720000" />
+      <workItem from="1562824320564" duration="209000" />
+      <workItem from="1562824551950" duration="603000" />
+      <workItem from="1562825180397" duration="3067000" />
+      <workItem from="1562899126430" duration="725000" />
+      <workItem from="1562905834552" duration="4000" />
+      <workItem from="1562983013951" duration="216000" />
+      <workItem from="1563076321675" duration="11474000" />
+      <workItem from="1563087870335" duration="7963000" />
+      <workItem from="1563103258764" duration="4464000" />
+      <workItem from="1563107751119" duration="76000" />
+      <workItem from="1563107959411" duration="13562000" />
+      <workItem from="1563154506895" duration="33000" />
+      <workItem from="1563276593272" duration="2246000" />
+      <workItem from="1563278863284" duration="4050000" />
+      <workItem from="1563283171221" duration="32000" />
+      <workItem from="1563283299789" duration="3000" />
+      <workItem from="1563291027810" duration="4404000" />
+      <workItem from="1563322929523" duration="17568000" />
+      <workItem from="1563372762778" duration="770000" />
+      <workItem from="1563420534948" duration="2687000" />
+      <workItem from="1563454016013" duration="8262000" />
+      <workItem from="1563493509891" duration="22851000" />
+      <workItem from="1563529804629" duration="1920000" />
+      <workItem from="1563545847927" duration="17366000" />
+      <workItem from="1563605313075" duration="9885000" />
+      <workItem from="1563632644791" duration="11028000" />
+      <workItem from="1563677913664" duration="15760000" />
+      <workItem from="1563700388308" duration="891000" />
+      <workItem from="1563714734846" duration="9818000" />
+      <workItem from="1563757840283" duration="23946000" />
+      <workItem from="1563800319209" duration="10147000" />
+      <workItem from="1563852645192" duration="504000" />
+      <workItem from="1563855862947" duration="132000" />
+      <workItem from="1563863231126" duration="6957000" />
+      <workItem from="1563871125222" duration="2138000" />
+      <workItem from="1563889641118" duration="11342000" />
+      <workItem from="1563930732465" duration="76000" />
+      <workItem from="1563930828527" duration="33000" />
+      <workItem from="1563931626409" duration="315000" />
+      <workItem from="1563932273635" duration="48000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="TestLog_findAll - 2019.07.22 at 22h 43m 41s.xml">
+      <configuration name="TestLog.findAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestLog_findAll - 2019.07.22 at 22h 45m 39s.xml">
+      <configuration name="TestLog.findAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestLog_findAll - 2019.07.22 at 22h 47m 26s.xml">
+      <configuration name="TestLog.findAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestLog_findAll - 2019.07.22 at 22h 52m 09s.xml">
+      <configuration name="TestLog.findAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestLog_findAll - 2019.07.22 at 23h 00m 30s.xml">
+      <configuration name="TestLog.findAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestLog_findAll - 2019.07.22 at 23h 01m 20s.xml">
+      <configuration name="TestLog.findAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestLog_findAll - 2019.07.23 at 16h 47m 28s.xml">
+      <configuration name="TestLog.findAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestLog_findAll - 2019.07.23 at 16h 48m 17s.xml">
+      <configuration name="TestLog.findAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestLog_findAll - 2019.07.23 at 17h 03m 03s.xml">
+      <configuration name="TestLog.findAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestLog_findAll - 2019.07.23 at 17h 03m 57s.xml">
+      <configuration name="TestLog.findAll" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="826138000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.496994" visible="true" weight="0.20844504" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="3" sideWeight="0.50300604" side_tool="true" weight="0.21447721" />
+      <window_info id="设计器" order="4" />
+      <window_info id="Web" order="5" side_tool="true" />
+      <window_info id="JRebel" order="6" sideWeight="0.5023148" side_tool="true" weight="0.38836104" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.5967262" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49061662" weight="0.3243626" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.30736545" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="调试" order="14" weight="0.5708215" />
+      <window_info anchor="bottom" id="缩略图" order="15" weight="0.3286119" />
+      <window_info anchor="bottom" id="REST Client" order="16" />
+      <window_info anchor="bottom" id="Problems" order="17" />
+      <window_info anchor="bottom" id="JRebel Executor" order="18" sideWeight="0.49128687" weight="0.44617563" />
+      <window_info anchor="bottom" id="JRebel Console" order="19" sideWeight="0.5093834" side_tool="true" weight="0.5708215" />
+      <window_info anchor="bottom" id="Event Log" order="20" sideWeight="0.4990403" weight="0.40084985" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.17828418" />
+      <window_info anchor="right" id="调色板" order="4" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32962137" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Jms Messenger" order="7" weight="0.3293092" />
+      <window_info anchor="right" id="Bean Validation" order="8" weight="0.3297587" />
+      <window_info anchor="right" id="Key Promoter X" order="9" />
+      <window_info anchor="right" id="JRebel Setup Guide" order="10" weight="0.1313673" />
+      <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.3297587" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.5107981" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" weight="0.3297587" />
+      <window_info id="设计器" order="4" />
+      <window_info id="Web" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.4966488" weight="0.4957507" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.31009957" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5033512" side_tool="true" weight="0.5424929" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="调试" order="15" weight="0.5708215" />
+      <window_info anchor="bottom" id="缩略图" order="16" weight="0.3286119" />
+      <window_info anchor="bottom" id="REST Client" order="17" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.19101876" />
+      <window_info anchor="right" id="调色板" order="4" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32962137" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Jms Messenger" order="7" weight="0.32931727" />
+      <window_info anchor="right" id="Bean Validation" order="8" weight="0.3297587" />
+      <window_info anchor="right" id="Key Promoter X" order="9" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="((Request)((RequestFacade)((XssHttpServletRequestWrapper)((ShiroHttpServletRequest)request).request).request).request).partsParseException" custom="org.apache.catalina.connector.RequestFacade,org.apache.catalina.connector.Request,org.apache.shiro.web.servlet.ShiroHttpServletRequest,com.lzhpo.aurora.admin.xss.XssHttpServletRequestWrapper" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Aurora$IDIncrease.ic" NAME="IDIncrease Coverage Results" MODIFIED="1563784875182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.lzhpo.aurora.admin.util.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/LogService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/LogServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="58" column="34" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
+          <folding>
+            <element signature="e#859#860#0" expanded="true" />
+            <element signature="e#897#898#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/util/IDIncrease.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/LogMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/util/JacksonUtil.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/util/IpAdrressUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/lzhpo/aurora/AuroraApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/org.springframework.data.domain.Pageable">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.springframework.data.domain.Pageable</OriginalElement>
+          <nodes>
+            <node x="" y="">org.springframework.data.domain.Pageable</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="55.0" y="15.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Maven/apache-maven-3.6.0/repository/org/springframework/data/spring-data-commons/2.1.8.RELEASE/spring-data-commons-2.1.8.RELEASE-sources.jar!/org/springframework/data/domain/Sort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9105">
+          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Maven/apache-maven-3.6.0/repository/org/springframework/data/spring-data-commons/2.1.8.RELEASE/spring-data-commons-2.1.8.RELEASE-sources.jar!/org/springframework/data/domain/Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/HELP.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvnw">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2907" />
+      </provider>
+    </entry>
+    <entry file="jar://E:/Maven/apache-maven-3.6.0/repository/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16.jar!/com/mysql/cj/jdbc/Driver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/generator/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="57" lean-forward="true" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/tool/updatelog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/es/service/ESLogService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/tool/log.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/es/service/impl/ESLogServiceImpl.java" />
+    <entry file="jar://E:/Maven/apache-maven-3.6.0/repository/org/springframework/data/spring-data-commons/2.1.8.RELEASE/spring-data-commons-2.1.8.RELEASE-sources.jar!/org/springframework/data/domain/PageRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-361">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Maven/apache-maven-3.6.0/repository/org/springframework/data/spring-data-commons/2.1.8.RELEASE/spring-data-commons-2.1.8.RELEASE-sources.jar!/org/springframework/data/domain/Pageable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#2957#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/lzhpo/aurora/es/TestLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="68" column="44" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/UpdateLogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-363">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-druid.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-465">
+          <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/AuroraApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/blog/blogArticle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/es/service/impl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/es/repository/LogRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/LogMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/es/repository/BlogArticleRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/es/service/ESBlogArticleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/es/service/impl/ESBlogArticleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/LogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="71" column="22" lean-forward="true" selection-start-line="71" selection-start-column="22" selection-end-line="71" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/blog/addBlog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/blog/addBlog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="89" column="66" selection-start-line="89" selection-start-column="66" selection-end-line="89" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/entity/Log.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/entity/BlogArticle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/aspect/LogAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-381">
+          <caret line="149" lean-forward="true" selection-start-line="149" selection-end-line="149" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="83" column="15" selection-start-line="83" selection-start-column="15" selection-end-line="83" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/BlogArticleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/BlogArticleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="46" column="59" selection-start-line="46" selection-start-column="59" selection-end-line="46" selection-end-column="59" />
+          <folding>
+            <element signature="e#1510#1511#0" expanded="true" />
+            <element signature="e#1537#1538#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/BlogArticleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/BlogArticleMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="90" column="2" selection-start-line="90" selection-start-column="2" selection-end-line="90" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/BlogArticleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="150" column="80" selection-start-line="150" selection-start-column="80" selection-end-line="150" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/BlogTagMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="65" column="23" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/BlogTagMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/BlogTagService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/BlogTagController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="60" column="46" selection-start-line="60" selection-start-column="46" selection-end-line="60" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/BlogTagServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="41" column="62" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Aurora.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
