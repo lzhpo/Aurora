@@ -5,120 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bf1808c-7665-48e5-82ac-ceffe536cc3a" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/AuroraApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/AuroraApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/aspect/LogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/aspect/LogAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/BlogArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/BlogArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/BlogTypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/BlogTypeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/DictionaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/DictionaryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/EmailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/EmailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/LogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/LogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/MyFileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/MyFileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/RoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/UpdateLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/UpdateLogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/es/repository/BlogArticleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/es/repository/BlogArticleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/BlogTypeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/BlogTypeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/DictionaryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/DictionaryMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/DownLoadLogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/DownLoadLogMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/EmailMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/EmailMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/LogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/LogMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/MyFileMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/MyFileMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/ResourcesMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/ResourcesMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/RoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/RoleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/UpdateLogMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/UpdateLogMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/BlogTypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/BlogTypeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/DictionaryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/DictionaryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/DownLoadLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/DownLoadLogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/EmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/LogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/LogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/MyFileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/MyFileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/RoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/UpdateLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/UpdateLogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/BlogArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/BlogArticleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/BlogTagServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/BlogTagServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/BlogTypeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/BlogTypeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/DictionaryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/DictionaryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/DownLoadLogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/DownLoadLogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/EmailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/EmailServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/LogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/LogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/MyFileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/MyFileServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/ResourcesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/ResourcesServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/RoleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/UpdateLogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/UpdateLogServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/BlogTypeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/BlogTypeMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/DictionaryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/DictionaryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/DownLoadLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/DownLoadLogMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/EmailMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/EmailMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/LogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/LogMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/MyFileMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/MyFileMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/RoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/RoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UpdateLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UpdateLogMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/blog/addBlog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/blog/addBlog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/blog/blogArticle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/blog/blogArticle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/tool/dictionary.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/tool/dictionary.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/tool/email.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/tool/email.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/tool/dictionary.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/tool/dictionary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/aspect/LogAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/aspect/LogAspect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/controller/BlogArticleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/controller/BlogArticleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/controller/BlogTypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/controller/BlogTypeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/controller/DictionaryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/controller/DictionaryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/controller/EmailController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/controller/EmailController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/controller/LogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/controller/LogController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/controller/MyFileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/controller/MyFileController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/controller/RoleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/controller/RoleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/controller/UpdateLogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/controller/UpdateLogController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/mapper/BlogTypeMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/mapper/BlogTypeMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/mapper/DictionaryMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/mapper/DictionaryMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/mapper/DownLoadLogMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/mapper/DownLoadLogMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/mapper/EmailMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/mapper/EmailMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/mapper/LogMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/mapper/LogMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/mapper/MyFileMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/mapper/MyFileMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/mapper/RoleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/mapper/RoleMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/mapper/UpdateLogMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/mapper/UpdateLogMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/BlogTypeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/BlogTypeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/DictionaryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/DictionaryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/DownLoadLogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/DownLoadLogService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/EmailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/EmailService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/LogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/LogService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/MyFileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/MyFileService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/RoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/RoleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/UpdateLogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/UpdateLogService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/impl/BlogArticleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/impl/BlogArticleServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/impl/BlogTagServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/impl/BlogTagServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/impl/BlogTypeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/impl/BlogTypeServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/impl/DictionaryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/impl/DictionaryServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/impl/DownLoadLogServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/impl/DownLoadLogServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/impl/EmailServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/impl/EmailServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/impl/LogServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/impl/LogServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/impl/MyFileServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/impl/MyFileServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/impl/ResourcesServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/impl/ResourcesServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/impl/RoleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/impl/RoleServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/impl/UpdateLogServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/impl/UpdateLogServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lzhpo/aurora/admin/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/BlogTypeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/BlogTypeMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/DictionaryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/DictionaryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/DownLoadLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/DownLoadLogMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/EmailMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/EmailMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/LogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/LogMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/MyFileMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/MyFileMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/RoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/RoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/UpdateLogMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/UpdateLogMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/blog/addBlog.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/blog/addBlog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/blog/blogArticle.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/blog/blogArticle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/tool/dictionary.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/tool/dictionary.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/tool/email.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/tool/email.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin/tool/dictionary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin/tool/dictionary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -275,7 +162,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/RoleServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/UpdateLogServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/blog/addBlog.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/tool/email.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/es/repository/BlogArticleRepository.java" />
@@ -283,6 +169,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/static/js/blog/blogArticle.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/BlogArticleController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -320,8 +207,9 @@
     <option name="jreName" value="#JAVA_HOME" />
     <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="15" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="770" />
+    <option name="y" value="22" />
     <option name="width" value="1040" />
     <option name="height" value="1005" />
   </component>
@@ -333,6 +221,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -345,7 +234,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -715,6 +603,7 @@
       <workItem from="1563936628624" duration="1439000" />
       <workItem from="1563943644701" duration="9777000" />
       <workItem from="1563953462739" duration="13000" />
+      <workItem from="1563953839960" duration="116000" />
     </task>
     <servers />
   </component>
@@ -751,12 +640,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="837367000" />
+    <option name="totallyTimeSpent" value="837483000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="616" y="18" width="832" height="804" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.496994" visible="true" weight="0.20643431" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.496994" visible="true" weight="0.20542635" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.50300604" side_tool="true" weight="0.21447721" />
@@ -1202,8 +1091,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+        <state relative-caret-position="76">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
