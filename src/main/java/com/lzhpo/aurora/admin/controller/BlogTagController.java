@@ -92,7 +92,7 @@ public class BlogTagController {
     public LayuiData deleteById(String tagId){
         LayuiData layuiData = new LayuiData();
         try {
-            blogTagService.deleteById(Integer.valueOf(tagId));
+            blogTagService.deleteById(Integer.parseInt(tagId));
             layuiData.setMsg("删除成功！");
         } catch (NumberFormatException e) {
             e.printStackTrace();

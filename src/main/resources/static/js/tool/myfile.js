@@ -369,7 +369,7 @@ layui.use('upload', function(){
             });
         }
         ,done: function(res, index, upload){
-            if(res.code == 0){ //上传成功
+            if(res.code === 0){ //上传成功
                 window.location.href='/admin/tool/file'; //上传成功之后刷新页面
                 var tr = demoListView.find('tr#upload-'+ index)
                     ,tds = tr.children();

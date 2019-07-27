@@ -1,0 +1,38 @@
+<configuration>
+    <!-- STDOUT -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%-4relative [%thread] %-5level %logger{35} - %msg %n</pattern>
+        </encoder>
+    </appender>
+
+    <!--logback日志写入rabbitmq -->
+    <appender name="RabbitMQ" class="org.springframework.amqp.rabbit.logback.AmqpAppender">
+        <layout>
+            <pattern><![CDATA[ %d %p %t [%c] - <%m>%n ]]></pattern>
+        </layout>
+        <!--rabbitmq地址 -->
+        <addresses>192.168.200.152:5672</addresses>
+        <abbreviation>36</abbreviation>
+        <includeCallerData>true</includeCallerData>
+        <applicationId>aurora</applicationId>
+        <username>guest</username>
+        <password>guest</password>
+        <!--路由键 -->
+        <routingKeyPattern>aurora</routingKeyPattern>
+        <generateId>true</generateId>
+        <charset>UTF-8</charset>
+        <durable>true</durable>
+        <deliveryMode>NON_PERSISTENT</deliveryMode>
+        <declareExchange>true</declareExchange>
+        <autoDelete>false</autoDelete>
+    </appender>
+
+    <!-- root配置 -->
+    <root level="info">
+        <!-- 控制台打印日志 -->
+        <appender-ref ref="STDOUT" />
+        <!-- logback日志写入rabbitmq -->
+        <appender-ref ref="RabbitMQ" />
+    </root>
+</configuration>

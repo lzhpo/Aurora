@@ -6,6 +6,7 @@ import com.lzhpo.aurora.admin.entity.User;
 import com.lzhpo.aurora.admin.mapper.BlogArticleMapper;
 import com.lzhpo.aurora.admin.mapper.MyFileMapper;
 import com.lzhpo.aurora.admin.mapper.UserMapper;
+import com.lzhpo.aurora.admin.util.CodeUtil;
 import com.lzhpo.aurora.admin.util.LayuiData;
 import com.lzhpo.aurora.admin.util.MD5Utils;
 import org.apache.shiro.SecurityUtils;
@@ -134,28 +135,28 @@ public class LoginController {
         //验证码校验
         //logger.info("【正确的验证码为：" +scode +"】");
         logger.info("【用户输入的验证码为：" +code +"】");
-        if (!code.equals(scode)){
+        if (!CodeUtil.checkVerifyCode(request)) {
             layuiData.setCode(-1);
             layuiData.setMsg("验证码错误！");
             return layuiData;
-        }
-
-        Subject subject = SecurityUtils.getSubject();
-        try {
-            subject.login(token);
-            layuiData.setMsg("登录成功！");
-        } catch (UnknownAccountException | IncorrectCredentialsException e) {
-            token.clear();
-            layuiData.setCode(-1);
-            layuiData.setMsg("登录失败！用户名或密码错误！");
-        } catch (LockedAccountException e){
-            token.clear();
-          layuiData.setCode(-1);
-          layuiData.setMsg("登录失败！您的账号已被锁定！请联系管理员！");
-        } catch (AuthenticationException e) {
-            token.clear();
-            layuiData.setCode(-1);
-            layuiData.setMsg("登录认证失败！");
+        } else {
+            Subject subject = SecurityUtils.getSubject();
+            try {
+                subject.login(token);
+                layuiData.setMsg("登录成功！正在跳转中...");
+            } catch (UnknownAccountException | IncorrectCredentialsException e) {
+                token.clear();
+                layuiData.setCode(-1);
+                layuiData.setMsg("登录失败！用户名或密码错误！");
+            } catch (LockedAccountException e){
+                token.clear();
+                layuiData.setCode(-1);
+                layuiData.setMsg("登录失败！您的账号已被锁定！请联系管理员！");
+            } catch (AuthenticationException e) {
+                token.clear();
+                layuiData.setCode(-1);
+                layuiData.setMsg("登录认证失败！");
+            }
         }
         return layuiData;
     }
