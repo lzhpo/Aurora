@@ -145,6 +145,7 @@ public class BlogArticleController {
                 int count = blogArticleService.count();
                 layuiData.setCount(count);
                 List<BlogArticle> blogArticles = blogArticleService.selectByLimit(start, limit);
+                System.out.println(blogArticles);
                 layuiData.setData(blogArticles);
             } else {
                 List<BlogArticle> blogArticles = blogArticleService.selectByLikeContent(content, start, limit);

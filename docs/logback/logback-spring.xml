@@ -12,7 +12,7 @@
             <pattern><![CDATA[ %d %p %t [%c] - <%m>%n ]]></pattern>
         </layout>
         <!--rabbitmq地址 -->
-        <addresses>192.168.200.152:5672</addresses>
+        <addresses>192.168.200.110:5672</addresses>
         <abbreviation>36</abbreviation>
         <includeCallerData>true</includeCallerData>
         <applicationId>aurora</applicationId>

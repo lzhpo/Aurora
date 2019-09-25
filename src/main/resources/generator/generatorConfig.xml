@@ -24,7 +24,7 @@
         </commentGenerator>
 
         <!-- 配置数据库连接 -->
-        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
                         connectionURL="jdbc:mysql://localhost:3306/aurora?useUnicode=true&amp;useSSL=false&amp;characterEncoding=utf8&amp;serverTimezone=GMT%2B8"
                         userId="root"
                         password="123456">

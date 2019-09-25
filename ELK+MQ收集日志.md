@@ -1,4 +1,7 @@
 
+## 前提
+将`docs/logback/logback-spring.xml`文件放在`resources`目录下。
+
 ## Logstash配置
 配置文件：`/home/logstash/logstash-6.8.1/config/aurora-logstash-rabbitmq.conf`
 ```
@@ -10,7 +13,7 @@ input {
        exchange => "logs"
 	   exchange_type => "topic"
 	   key => "aurora"
-	   host => "192.168.200.152"
+	   host => "192.168.200.110"
 	   port => 5672
 	   user => "guest"
 	   password => "guest"
@@ -22,7 +25,7 @@ input {
  
 output {
   elasticsearch { 
-       hosts => ["192.168.200.152:9200"] 
+       hosts => ["192.168.200.110:9200"] 
 	   index => "aurora_log_mq"
 	   }
 }
