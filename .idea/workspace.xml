@@ -2,36 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6510b2fa-5057-46fe-8137-d1ff9d6c418e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/ES-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/ES-aurora_blog.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/ES-aurora_log.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/ES中的数据.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/aurora-rabbitmq.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/后台-发布博客.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/后台-在线用户.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/后台-操作记录.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/后台-用户管理-分配角色.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/后台-用户管理.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/后台-首页.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/lzhpo/aurora/redis/TestRedis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ELK+MQ收集日志.md" beforeDir="false" afterPath="$PROJECT_DIR$/ELK+MQ收集日志.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aurora.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/logback/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/logback/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sql/aurora.sql" beforeDir="false" afterPath="$PROJECT_DIR$/docs/sql/aurora.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jrebel-classpath-18656.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/BlogArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lzhpo/aurora/admin/controller/BlogArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-druid.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-druid.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/generator/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generator/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -138,6 +109,7 @@
       <updated>1569394464347</updated>
       <workItem from="1569394468394" duration="155000" />
       <workItem from="1569394679063" duration="6392000" />
+      <workItem from="1569401174121" duration="205000" />
     </task>
     <servers />
   </component>
