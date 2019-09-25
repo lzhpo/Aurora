@@ -52,6 +52,6 @@
 
 ## 请本人喝杯咖啡
 ### 支付宝
-![](http://cdn.lzhpo.com/%E6%94%AF%E4%BB%98%E5%AE%9D%E6%94%B6%E6%AC%BE%E7%A0%81.jpg)
+![](http://cdn.lzhpo.com/Aurora-%E6%94%AF%E4%BB%98%E5%AE%9D%E6%94%B6%E6%AC%BE%E7%A0%81.png)
 ### 微信
-![](http://cdn.lzhpo.com/%E5%BE%AE%E4%BF%A1%E6%94%B6%E6%AC%BE%E7%A0%81.png)
+![](http://cdn.lzhpo.com/Aurora-%E5%BE%AE%E4%BF%A1%E6%94%B6%E6%AC%BE%E7%A0%81.png)
