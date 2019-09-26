@@ -2,13 +2,13 @@
 ![](docs/images/后台-首页.png)
 ![](docs/images/后台-用户管理-分配角色.png)
 ![](docs/images/后台-用户管理.png)
+![](docs/images/后台-资源管理-1.png)
+![](docs/images/后台-资源管理-2.png)
 ![](docs/images/后台-操作记录.png)
 ![](docs/images/后台-在线用户.png)
 ![](docs/images/后台-发布博客.png)
-![](docs/images/ES中的数据.png)
 ![](docs/images/ES-aurora_log.png)
 ![](docs/images/ES-aurora_blog.png)
-![](docs/images/ES-1.png)
 ![](docs/images/aurora-rabbitmq.png)
 
 ## 技术栈
