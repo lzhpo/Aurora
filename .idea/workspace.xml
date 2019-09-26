@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6510b2fa-5057-46fe-8137-d1ff9d6c418e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/images/后台-资源管理-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/后台-资源管理-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/images/ES-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/images/ES中的数据.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,6 +113,7 @@
       <workItem from="1569401596661" duration="58000" />
       <workItem from="1569401868106" duration="135000" />
       <workItem from="1569465426409" duration="765000" />
+      <workItem from="1569466337153" duration="35000" />
     </task>
     <servers />
   </component>
