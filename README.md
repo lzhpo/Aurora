@@ -50,6 +50,12 @@
 
 如果有什么问题，请发送邮件lzhpo@qq.com联系我！或者提Issue！
 
+## 开源地址
+
+GitHub：[https://github.com/lzhpo/Aurora](https://github.com/lzhpo/Aurora)
+
+码云：[https://gitee.com/lzhpo/Aurora](https://gitee.com/lzhpo/Aurora)
+
 ## 请本人喝杯咖啡
 ### 支付宝
 ![](http://cdn.lzhpo.com/Aurora-%E6%94%AF%E4%BB%98%E5%AE%9D%E6%94%B6%E6%AC%BE%E7%A0%81.png)
