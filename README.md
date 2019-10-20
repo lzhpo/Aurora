@@ -1,4 +1,12 @@
+
+![](https://img.shields.io/badge/author-会打篮球的程序猿-red)
+![](https://img.shields.io/badge/JDK-1.8-blueviolet.svg)
+![](https://img.shields.io/badge/license-GPL%20v3-success.svg)
+
+<hr>
+
 ## 页面截图
+
 ![](docs/images/后台-资源管理-1.png)
 ![](docs/images/后台-资源管理-2.png)
 ![](docs/images/后台-首页.png)

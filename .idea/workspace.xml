@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6510b2fa-5057-46fe-8137-d1ff9d6c418e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,6 +27,7 @@
     </option>
     <option name="importingSettings">
       <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
         <option name="jdkForImporter" value="#JAVA_HOME" />
         <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
@@ -114,6 +116,16 @@
       <workItem from="1569401868106" duration="135000" />
       <workItem from="1569465426409" duration="765000" />
       <workItem from="1569466337153" duration="35000" />
+      <workItem from="1569492191148" duration="57000" />
+      <workItem from="1570851481124" duration="1273000" />
+      <workItem from="1570854697189" duration="108000" />
+      <workItem from="1570921611401" duration="420000" />
+      <workItem from="1570922079067" duration="660000" />
+      <workItem from="1570936768896" duration="22000" />
+      <workItem from="1571018480227" duration="18000" />
+      <workItem from="1571018763694" duration="78000" />
+      <workItem from="1571019325407" duration="19000" />
+      <workItem from="1571560395435" duration="1860000" />
     </task>
     <servers />
   </component>
